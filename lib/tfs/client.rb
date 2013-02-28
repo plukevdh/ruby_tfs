@@ -1,34 +1,34 @@
 require 'active_support/core_ext/hash/indifferent_access'
 require 'ruby_odata'
+require 'tfs/configuration'
 
 module TFS
   class Client
-    REQUIRED_ATTRS = [:endpoint]
+    include TFS::Configuration
 
-    attr_reader *REQUIRED_ATTRS
+    # Options specific to the provider (odata in this case)
+    PROVIDER_OPTIONS = [:username, :password, :verify_ssl]
 
-    def initialize(options, provider=OData::Service)
-      options.to_options!
+    attr_reader :connection, :endpoint
 
-      REQUIRED_ATTRS.each do |attr|
-        raise ArgumentError, "Missing #{attr} a required attribute." unless options.has_key? attr.to_sym
-        instance_variable_set "@#{attr}", options[attr]
+    # Creates an instance of the client
+    def initialize(options={}, provider=OData::Service)
+      TFS::Configuration.keys.each do |key|
+        instance_variable_set(:"@#{key}", options[key] || TFS.instance_variable_get(:"@#{key}"))
       end
 
       @provider = provider
     end
 
-    # Options specific to the provider (odata in this case)
-    PROVIDER_OPTIONS = [:username, :password, :verify_ssl]
-
-    def connect_as(options)
-      @client = @provider.new endpoint, filter_for_provider(options)
+    # Creates the connection to the data provider source
+    def connect_as(opts)
+      @connection = @provider.new endpoint, filter_for_provider(opts)
     end
 
     private
 
-    def filter_for_provider(options)
-      options.select {|k,v| PROVIDER_OPTIONS.include? k }
+    def filter_for_provider(opts)
+      opts.select {|k,v| PROVIDER_OPTIONS.include? k }
     end
   end
 end
