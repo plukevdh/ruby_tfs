@@ -34,7 +34,7 @@ GEM
       simplecov-html (~> 0.7.1)
     simplecov-html (0.7.1)
     vcr (2.4.0)
-    webmock (1.10.0)
+    webmock (1.9.3)
       addressable (>= 2.2.7)
       crack (>= 0.3.2)
 
@@ -48,4 +48,4 @@ DEPENDENCIES
   ruby_odata
   simplecov
   vcr
-  webmock
+  webmock (< 1.10)

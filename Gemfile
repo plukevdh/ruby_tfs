@@ -1,12 +1,16 @@
 source :rubygems
 
-gem 'activesupport'
-gem 'ruby_odata'
+group :development do
+  gem 'pry'
+  gem 'pry-debugger', :platforms => :mri_19
+end
 
 group :test do
   gem 'rspec'
-  gem 'vcr'
-  gem 'webmock'
+  gem 'vcr', require: false
+  gem 'webmock', "< 1.10"
   gem 'flexmock'
-  gem 'simplecov'
+  gem 'simplecov', require: false
 end
+
+gemspec
