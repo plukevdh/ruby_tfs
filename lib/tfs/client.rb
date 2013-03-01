@@ -24,8 +24,8 @@ module TFS
       @connection = @provider.new endpoint, opts_for_connection
     end
 
-    def builds
-      create_query(Builds)
+    def builds(params="")
+      create_query(Builds, params)
     end
 
     def changesets
@@ -38,8 +38,8 @@ module TFS
 
     private
 
-    def create_query(klass)
-      TFS::QueryEngine.new(klass, @connection)
+    def create_query(klass, params)
+      TFS::QueryEngine.new(klass, @connection, params)
     end
 
     def opts_for_connection
