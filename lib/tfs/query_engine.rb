@@ -12,13 +12,19 @@ module TFS
       TFS::Projects
     ]
 
+    DEFAULT_LIMIT = 50
+
     attr_reader :type
 
-    def initialize(for_class, connection)
+    def initialize(for_class, connection, params="")
       raise TypeError, "#{for_class.to_s} is not a TFS object type" unless OBJECTS.include? for_class
       @type, @connection = for_class, connection
 
-      @native_query = @connection.send(for_class.to_s.split("::").last)
+
+      @native_query = (params == "") ?
+        @connection.send(for_class.to_s.split("::").last) :
+        @connection.send(for_class.to_s.split("::").last, params)
+
     end
 
     def limit(count)
@@ -32,7 +38,7 @@ module TFS
     end
 
     def where(filter)
-      @native_query = @native_query.filter(query)
+      @native_query = @native_query.filter(filter)
       self
     end
 
@@ -41,8 +47,17 @@ module TFS
       self
     end
 
+    def page(start)
+      @native_query = @native_query.skip(start)
+      self
+    end
+
     def run
       @connection.execute
+    end
+
+    def to_query
+      @native_query.query
     end
   end
 end

@@ -15,4 +15,6 @@ group :test do
   gem 'simplecov', require: false
 end
 
+
+gem 'rest-client', git: "https://github.com/plukevdh/rest-client.git"
 gemspec

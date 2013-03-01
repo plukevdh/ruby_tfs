@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/plukevdh/rest-client.git
+  revision: 538df93bddee3a59fbbe4fd0ca76649cf566a8b6
+  specs:
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
+      netrc
+
 PATH
   remote: .
   specs:
@@ -28,6 +36,7 @@ GEM
     method_source (0.8.1)
     mime-types (1.21)
     multi_json (1.6.1)
+    netrc (0.7.7)
     nokogiri (1.5.6)
     pry (0.9.12)
       coderay (~> 1.0.5)
@@ -37,8 +46,6 @@ GEM
       debugger (~> 1.2.0)
       pry (~> 0.9.10)
     rake (10.0.3)
-    rest-client (1.6.7)
-      mime-types (>= 1.16)
     rspec (2.13.0)
       rspec-core (~> 2.13.0)
       rspec-expectations (~> 2.13.0)
@@ -72,6 +79,7 @@ DEPENDENCIES
   pry
   pry-debugger
   rake
+  rest-client!
   rspec
   ruby_tfs!
   simplecov
