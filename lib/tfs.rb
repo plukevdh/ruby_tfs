@@ -20,3 +20,5 @@ module TFS
     end
   end
 end
+
+TFS.setup

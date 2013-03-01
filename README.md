@@ -10,3 +10,8 @@ This wrapper is mostly a shell around the `ruby_odata` gem to provide a "kinder"
 ## Credits
 - Thanks to Damien White ([visoft](https://github.com/visoft)) for his [`ruby_odata`](https://github.com/visoft/ruby_odata) wrapper. It made this project very painless to write.
 - Thanks to Microsoft for allowing an OData wrapper to exist for TFS. It makes writing third-party, non .NET apps much more fun. Go open source!
+
+## License
+Apache v2
+
+See the LICENSE.md file for more details.

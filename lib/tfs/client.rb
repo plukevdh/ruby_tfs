@@ -21,14 +21,16 @@ module TFS
     end
 
     # Creates the connection to the data provider source
-    def connect_as(opts)
-      @connection = @provider.new endpoint, filter_for_provider(opts)
+    def connect
+      @connection = @provider.new endpoint, opts_for_connection
     end
 
     private
-
-    def filter_for_provider(opts)
-      opts.select {|k,v| PROVIDER_OPTIONS.include? k }
+    def opts_for_connection
+      {
+        username: @username,
+        password: @password
+      }.merge connection_options
     end
   end
 end
