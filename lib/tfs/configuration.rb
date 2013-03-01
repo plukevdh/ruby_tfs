@@ -5,7 +5,7 @@ module TFS
     extend Forwardable
 
     attr_writer :username, :password
-    attr_accessor :endpoint, :connection_options
+    attr_accessor :endpoint, :connection_options, :provider
 
     def_delegator :options, :hash
 
@@ -18,9 +18,7 @@ module TFS
         :open_timeout => 5,
         :timeout => 10,
       },
-      :ssl => {
-        :verify => false
-      },
+      :verify_ssl => false
     } unless defined? TFS::Configuration::CONNECTION_OPTIONS
 
     class << self
@@ -30,6 +28,7 @@ module TFS
           :password,
           :endpoint,
           :connection_options,
+          :provider
         ]
       end
 
@@ -47,6 +46,10 @@ module TFS
 
       def endpoint
         ENV['TFS_ENDPOINT']
+      end
+
+      def provider
+        OData::Service
       end
 
       def options

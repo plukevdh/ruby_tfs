@@ -4,6 +4,7 @@ describe TFS do
   before do
     TFS.configure do |config|
       config.endpoint = "http://fake.tfs.com:8080/tfs"
+      config.provider = flexmock(:provider, new: true)
     end
   end
 
@@ -16,8 +17,8 @@ describe TFS do
 
   it "aliases methods to the client" do
     flexmock(client, :connect_as)
-    client.should_receive(:connect_as).once
+    client.should_receive(:connect).once
 
-    TFS.connect_as(username: "lukas", password: "test")
+    TFS.connect
   end
 end

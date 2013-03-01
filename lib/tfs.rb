@@ -5,8 +5,14 @@ module TFS
   class << self
     include Configuration
 
+    # Shortcut to create and connect a client
     def client
-      @client = Client.new(options) unless defined?(@client) && @client.hash == options.hash
+      @client = begin
+        client = Client.new(options)
+        client.connect
+        client
+      end unless defined?(@client) && @client.hash == options.hash
+
       @client
     end
 
