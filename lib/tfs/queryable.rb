@@ -14,6 +14,7 @@ module TFS
       def odata_query(raw_query)
         get_query.where(raw_query)
       end
+      alias :where :odata_query
 
       private
       def get_query

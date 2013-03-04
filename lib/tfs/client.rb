@@ -24,17 +24,21 @@ module TFS
       @connection = @provider.new endpoint, opts_for_connection
     end
 
-    [TFS::Builds, TFS::Changesets, TFS::Projects].each do |klass|
+    [TFS::Builds, TFS::Changesets, TFS::Projects, TFS::WorkItems].each do |klass|
       base_class = klass.name.split("::").last
 
       define_method(base_class.downcase) do |*params|
         TFS::QueryEngine.new(klass, @connection, params)
       end
-
     end
 
     def run
       @connection.execute
+    end
+
+    def method_missing(method_name, *args, &block)
+      return super unless @connection.respond_to? method_name
+      @connection.send(method_name, *args, &block)
     end
 
     private
