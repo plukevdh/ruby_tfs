@@ -31,8 +31,18 @@ Currently, we support the following (due to my own purposes) with plans to furth
 - WorkItems
 - Projects
 
+### Querying
+
+All queries require a call to `#run` to finalize the query. This also makes it possible in most cases where you are defining a query to instead use `#to_query` to see the actual url-based query that will be run.
+
+## Notes
+While the api for `ruby_tfs` looks similar to Rails' `ActiveRecord` api, it is not meant to be an exact translation. The base type objects (`TFS::Builds`, `TFS::Projects`, etc) are setup to follow more of the [Repository pattern](http://martinfowler.com/eaaCatalog/repository.html) rather than an ORM-like pattern. The objects returned from the repository are actually from the [`ruby_odata`][2] library, which is a core dependency of this project. The odata lib does a great job of representing the OData… data, so I felt no need to re-wrap in a secondary set of layers. This opionon may change depending on the direction of the [`ruby_data`][2] project.
+
+## Plans
+The query engine currently works against the actual [OData api](http://www.odata.org/documentation/uri-conventions#QueryStringOptions). Eventually it'd be great to have a more "Ruby Way™" of doing this by doing some sort of query compilation between a Ruby DSL and the OData api. That will come in time.
+
 ## Credits
-- Thanks to Damien White ([visoft](https://github.com/visoft)) for his [`ruby_odata`](https://github.com/visoft/ruby_odata) wrapper. It made this project very painless to write.
+- Thanks to Damien White ([visoft](https://github.com/visoft)) for his [`ruby_odata`][2] wrapper. It made this project very painless to write.
 - Thanks to Microsoft for allowing an OData wrapper to exist for TFS. It makes writing third-party, non .NET apps much more fun. Go open source!
 
 ## License
@@ -41,3 +51,4 @@ Apache v2
 See the LICENSE.md file for more details.
 
 [1]: https://tfsodata.visualstudio.com/
+[2]: https://github.com/visoft/ruby_odata
