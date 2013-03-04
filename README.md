@@ -30,6 +30,7 @@ Currently, we support the following (due to my own purposes) with plans to furth
 - Changesets
 - WorkItems
 - Projects
+- WorkItems
 
 ### Querying
 

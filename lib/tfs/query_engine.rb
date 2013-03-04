@@ -3,6 +3,9 @@ require 'tfs/builds'
 require 'tfs/changesets'
 require 'tfs/projects'
 
+require 'tfs/work_items'
+require 'tfs/work_item'
+
 module TFS
   class QueryEngine
     extend Forwardable
@@ -12,7 +15,8 @@ module TFS
     VALID_CLASSES = [
       TFS::Builds,
       TFS::Changesets,
-      TFS::Projects
+      TFS::Projects,
+      TFS::WorkItems
     ]
 
     DEFAULT_LIMIT = 50
