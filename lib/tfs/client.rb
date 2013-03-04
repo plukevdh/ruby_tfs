@@ -24,12 +24,13 @@ module TFS
       @connection = @provider.new endpoint, opts_for_connection
     end
 
-    def builds(params="")
-      create_query(Builds, params)
-    end
+    [TFS::Builds, TFS::Changesets, TFS::Projects].each do |klass|
+      base_class = klass.name.split("::").last
 
-    def changesets
-      create_query(Changesets)
+      define_method(base_class.downcase) do |*params|
+        TFS::QueryEngine.new(klass, @connection, params)
+      end
+
     end
 
     def run
@@ -37,10 +38,6 @@ module TFS
     end
 
     private
-
-    def create_query(klass, params)
-      TFS::QueryEngine.new(klass, @connection, params)
-    end
 
     def opts_for_connection
       {

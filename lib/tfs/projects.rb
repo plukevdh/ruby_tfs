@@ -1,11 +1,13 @@
 module TFS
-  class Projects
+  class Projects < Queryable
     class << self
-      def all
 
-      end
-
-      def find(id)
+      # Projects can be found by name alone
+      #
+      #     TFS::Projects.find("BFG")
+      #
+      def find(name)
+        TFS.projects("'#{name}'").run.first
       end
     end
   end
