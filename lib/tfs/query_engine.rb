@@ -4,7 +4,6 @@ require 'tfs/changesets'
 require 'tfs/projects'
 
 require 'tfs/work_items'
-require 'tfs/work_item'
 
 module TFS
   class QueryEngine
