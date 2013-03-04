@@ -1,14 +1,15 @@
 require 'spec_helper'
 
 describe TFS do
+  let(:odata) { flexmock(:odata) }
+  let(:client) { TFS.client }
+
   before do
     TFS.configure do |config|
       config.endpoint = "http://fake.tfs.com:8080/tfs"
-      config.provider = flexmock(:provider, new: true)
+      config.provider = flexmock(:provider, new: odata)
     end
   end
-
-  let(:client) { TFS.client }
 
   it "creates a client" do
     client.should be_a TFS::Client

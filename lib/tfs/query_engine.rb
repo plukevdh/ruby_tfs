@@ -1,3 +1,4 @@
+require 'tfs/queryable'
 require 'tfs/builds'
 require 'tfs/changesets'
 require 'tfs/projects'
@@ -6,7 +7,9 @@ module TFS
   class QueryEngine
     extend Forwardable
 
-    OBJECTS = [
+    attr_reader :type
+
+    VALID_CLASSES = [
       TFS::Builds,
       TFS::Changesets,
       TFS::Projects
@@ -14,17 +17,11 @@ module TFS
 
     DEFAULT_LIMIT = 50
 
-    attr_reader :type
-
     def initialize(for_class, connection, params="")
-      raise TypeError, "#{for_class.to_s} is not a TFS object type" unless OBJECTS.include? for_class
+      raise TypeError, "#{for_class.name} is not a valid query type." unless VALID_CLASSES.include? for_class
       @type, @connection = for_class, connection
 
-
-      @native_query = (params == "") ?
-        @connection.send(for_class.to_s.split("::").last) :
-        @connection.send(for_class.to_s.split("::").last, params)
-
+      @native_query = @connection.send(for_class.name.split("::").last, params)
     end
 
     def limit(count)

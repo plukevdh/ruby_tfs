@@ -1,11 +1,12 @@
 module TFS
-  class Changesets
+  class Changesets < Queryable
     class << self
-      def all
-        TFS.client.get(:changesets)
-      end
-
+      # Changeset can be found by id alone
+      #
+      #     TFS::Changeset.find(123)
+      #
       def find(id)
+        TFS.changesets(id).run.first
       end
     end
   end

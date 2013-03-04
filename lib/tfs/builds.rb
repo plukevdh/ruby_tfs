@@ -1,5 +1,5 @@
 module TFS
-  class Builds
+  class Builds < Queryable
     STATES = %w(All
                 Failed
                 InProgress
@@ -10,16 +10,14 @@ module TFS
                 Succeeded)
 
     class << self
-      def all
-        TFS.builds.run
-      end
 
+      # To do an explicit build find, the API requires the definiton the build is from,
+      # the project it exists within, and the build number.
+      #
+      #     TFS::Builds.find("DevBuild", "My New Project", 'DevBuild.3')
+      #
       def find(definition, project, number)
         TFS.builds("Definition='#{definition}',Project='#{project}',Number='#{number}'").run.first
-      end
-
-      def odata_query(raw_query)
-        TFS.builds.where(raw_query)
       end
     end
   end
