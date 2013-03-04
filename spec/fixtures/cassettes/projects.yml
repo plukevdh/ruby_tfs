@@ -1,0 +1,210 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://snd%5Cplukevdh_cp:garbage@codeplexodata.cloudapp.net/TFS29/Projects()?$top=50
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Length:
+      - '2453'
+      Content-Type:
+      - application/atom+xml;charset=utf-8
+      Expires:
+      - Wed, 06 Mar 2013 00:34:41 GMT
+      Vary:
+      - ! '*'
+      Server:
+      - Microsoft-IIS/7.0
+      Dataserviceversion:
+      - 2.0;
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Wed, 06 Mar 2013 00:34:11 GMT
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>\r\n<feed
+        xml:base=\"https://codeplexodata.cloudapp.net/TFS29/\" xmlns:d=\"http://schemas.microsoft.com/ado/2007/08/dataservices\"
+        xmlns:m=\"http://schemas.microsoft.com/ado/2007/08/dataservices/metadata\"
+        xmlns=\"http://www.w3.org/2005/Atom\">\r\n  <title type=\"text\">Projects</title>\r\n
+        \ <id>https://codeplexodata.cloudapp.net/TFS29/Projects()/</id>\r\n  <updated>2013-03-06T00:34:11Z</updated>\r\n
+        \ <link rel=\"self\" title=\"Projects\" href=\"Projects\" />\r\n  <entry>\r\n
+        \   <id>https://codeplexodata.cloudapp.net/TFS29/Projects('rubytfs')</id>\r\n
+        \   <title type=\"text\">rubytfs</title>\r\n    <updated>2013-03-06T00:34:11Z</updated>\r\n
+        \   <author>\r\n      <name />\r\n    </author>\r\n    <link rel=\"edit\"
+        title=\"Project\" href=\"Projects('rubytfs')\" />\r\n    <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/Changesets\"
+        type=\"application/atom+xml;type=feed\" title=\"Changesets\" href=\"Projects('rubytfs')/Changesets\"
+        />\r\n    <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/Builds\"
+        type=\"application/atom+xml;type=feed\" title=\"Builds\" href=\"Projects('rubytfs')/Builds\"
+        />\r\n    <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/BuildDefinitions\"
+        type=\"application/atom+xml;type=feed\" title=\"BuildDefinitions\" href=\"Projects('rubytfs')/BuildDefinitions\"
+        />\r\n    <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/WorkItems\"
+        type=\"application/atom+xml;type=feed\" title=\"WorkItems\" href=\"Projects('rubytfs')/WorkItems\"
+        />\r\n    <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/Queries\"
+        type=\"application/atom+xml;type=feed\" title=\"Queries\" href=\"Projects('rubytfs')/Queries\"
+        />\r\n    <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/Branches\"
+        type=\"application/atom+xml;type=feed\" title=\"Branches\" href=\"Projects('rubytfs')/Branches\"
+        />\r\n    <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/AreaPaths\"
+        type=\"application/atom+xml;type=feed\" title=\"AreaPaths\" href=\"Projects('rubytfs')/AreaPaths\"
+        />\r\n    <category term=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Project\"
+        scheme=\"http://schemas.microsoft.com/ado/2007/08/dataservices/scheme\" />\r\n
+        \   <content type=\"application/xml\">\r\n      <m:properties>\r\n        <d:Name>rubytfs</d:Name>\r\n
+        \       <d:Collection>https://tfs.codeplex.com/tfs/TFS29</d:Collection>\r\n
+        \     </m:properties>\r\n    </content>\r\n  </entry>\r\n</feed>"
+    http_version: 
+  recorded_at: Wed, 06 Mar 2013 00:34:11 GMT
+- request:
+    method: get
+    uri: https://snd%5Cplukevdh_cp:garbage@codeplexodata.cloudapp.net/TFS29/Projects('rubytfs')
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Length:
+      - '2187'
+      Content-Type:
+      - application/atom+xml;charset=utf-8
+      Expires:
+      - Wed, 06 Mar 2013 00:34:42 GMT
+      Vary:
+      - ! '*'
+      Server:
+      - Microsoft-IIS/7.0
+      Dataserviceversion:
+      - 1.0;
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Wed, 06 Mar 2013 00:34:12 GMT
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>\r\n<entry
+        xml:base=\"https://codeplexodata.cloudapp.net/TFS29/\" xmlns:d=\"http://schemas.microsoft.com/ado/2007/08/dataservices\"
+        xmlns:m=\"http://schemas.microsoft.com/ado/2007/08/dataservices/metadata\"
+        xmlns=\"http://www.w3.org/2005/Atom\">\r\n  <id>https://codeplexodata.cloudapp.net/TFS29/Projects('rubytfs')</id>\r\n
+        \ <title type=\"text\">rubytfs</title>\r\n  <updated>2013-03-06T00:34:12Z</updated>\r\n
+        \ <author>\r\n    <name />\r\n  </author>\r\n  <link rel=\"edit\" title=\"Project\"
+        href=\"Projects('rubytfs')\" />\r\n  <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/Changesets\"
+        type=\"application/atom+xml;type=feed\" title=\"Changesets\" href=\"Projects('rubytfs')/Changesets\"
+        />\r\n  <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/Builds\"
+        type=\"application/atom+xml;type=feed\" title=\"Builds\" href=\"Projects('rubytfs')/Builds\"
+        />\r\n  <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/BuildDefinitions\"
+        type=\"application/atom+xml;type=feed\" title=\"BuildDefinitions\" href=\"Projects('rubytfs')/BuildDefinitions\"
+        />\r\n  <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/WorkItems\"
+        type=\"application/atom+xml;type=feed\" title=\"WorkItems\" href=\"Projects('rubytfs')/WorkItems\"
+        />\r\n  <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/Queries\"
+        type=\"application/atom+xml;type=feed\" title=\"Queries\" href=\"Projects('rubytfs')/Queries\"
+        />\r\n  <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/Branches\"
+        type=\"application/atom+xml;type=feed\" title=\"Branches\" href=\"Projects('rubytfs')/Branches\"
+        />\r\n  <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/AreaPaths\"
+        type=\"application/atom+xml;type=feed\" title=\"AreaPaths\" href=\"Projects('rubytfs')/AreaPaths\"
+        />\r\n  <category term=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Project\"
+        scheme=\"http://schemas.microsoft.com/ado/2007/08/dataservices/scheme\" />\r\n
+        \ <content type=\"application/xml\">\r\n    <m:properties>\r\n      <d:Name>rubytfs</d:Name>\r\n
+        \     <d:Collection>https://tfs.codeplex.com/tfs/TFS29</d:Collection>\r\n
+        \   </m:properties>\r\n  </content>\r\n</entry>"
+    http_version: 
+  recorded_at: Wed, 06 Mar 2013 00:34:12 GMT
+- request:
+    method: get
+    uri: https://snd%5Cplukevdh_cp:garbage@codeplexodata.cloudapp.net/TFS29/Projects()?$filter=startswith(Name,'rubytfs')
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Length:
+      - '2453'
+      Content-Type:
+      - application/atom+xml;charset=utf-8
+      Expires:
+      - Wed, 06 Mar 2013 00:34:42 GMT
+      Vary:
+      - ! '*'
+      Server:
+      - Microsoft-IIS/7.0
+      Dataserviceversion:
+      - 2.0;
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Wed, 06 Mar 2013 00:34:13 GMT
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>\r\n<feed
+        xml:base=\"https://codeplexodata.cloudapp.net/TFS29/\" xmlns:d=\"http://schemas.microsoft.com/ado/2007/08/dataservices\"
+        xmlns:m=\"http://schemas.microsoft.com/ado/2007/08/dataservices/metadata\"
+        xmlns=\"http://www.w3.org/2005/Atom\">\r\n  <title type=\"text\">Projects</title>\r\n
+        \ <id>https://codeplexodata.cloudapp.net/TFS29/Projects()/</id>\r\n  <updated>2013-03-06T00:34:13Z</updated>\r\n
+        \ <link rel=\"self\" title=\"Projects\" href=\"Projects\" />\r\n  <entry>\r\n
+        \   <id>https://codeplexodata.cloudapp.net/TFS29/Projects('rubytfs')</id>\r\n
+        \   <title type=\"text\">rubytfs</title>\r\n    <updated>2013-03-06T00:34:13Z</updated>\r\n
+        \   <author>\r\n      <name />\r\n    </author>\r\n    <link rel=\"edit\"
+        title=\"Project\" href=\"Projects('rubytfs')\" />\r\n    <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/Changesets\"
+        type=\"application/atom+xml;type=feed\" title=\"Changesets\" href=\"Projects('rubytfs')/Changesets\"
+        />\r\n    <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/Builds\"
+        type=\"application/atom+xml;type=feed\" title=\"Builds\" href=\"Projects('rubytfs')/Builds\"
+        />\r\n    <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/BuildDefinitions\"
+        type=\"application/atom+xml;type=feed\" title=\"BuildDefinitions\" href=\"Projects('rubytfs')/BuildDefinitions\"
+        />\r\n    <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/WorkItems\"
+        type=\"application/atom+xml;type=feed\" title=\"WorkItems\" href=\"Projects('rubytfs')/WorkItems\"
+        />\r\n    <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/Queries\"
+        type=\"application/atom+xml;type=feed\" title=\"Queries\" href=\"Projects('rubytfs')/Queries\"
+        />\r\n    <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/Branches\"
+        type=\"application/atom+xml;type=feed\" title=\"Branches\" href=\"Projects('rubytfs')/Branches\"
+        />\r\n    <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/AreaPaths\"
+        type=\"application/atom+xml;type=feed\" title=\"AreaPaths\" href=\"Projects('rubytfs')/AreaPaths\"
+        />\r\n    <category term=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Project\"
+        scheme=\"http://schemas.microsoft.com/ado/2007/08/dataservices/scheme\" />\r\n
+        \   <content type=\"application/xml\">\r\n      <m:properties>\r\n        <d:Name>rubytfs</d:Name>\r\n
+        \       <d:Collection>https://tfs.codeplex.com/tfs/TFS29</d:Collection>\r\n
+        \     </m:properties>\r\n    </content>\r\n  </entry>\r\n</feed>"
+    http_version: 
+  recorded_at: Wed, 06 Mar 2013 00:34:13 GMT
+recorded_with: VCR 2.4.0

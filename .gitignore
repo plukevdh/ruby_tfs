@@ -1,5 +1,2 @@
 test.rb
 coverage/
-
-# TODO: Want these later, just dont commit sensitive data
-spec/fixtures

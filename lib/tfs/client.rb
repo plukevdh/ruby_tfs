@@ -1,11 +1,13 @@
 require 'ruby_odata'
 require 'tfs/configuration'
 
+require 'tfs/class_helpers'
 require 'tfs/query_engine'
 
 module TFS
   class Client
     include TFS::Configuration
+    extend TFS::ClassHelpers
 
     # Options specific to the provider (odata in this case)
     PROVIDER_OPTIONS = [:username, :password, :verify_ssl]
@@ -25,9 +27,7 @@ module TFS
     end
 
     [TFS::Builds, TFS::Changesets, TFS::Projects, TFS::WorkItems].each do |klass|
-      base_class = klass.name.split("::").last
-
-      define_method(base_class.downcase) do |*params|
+      define_method(base_class(klass).downcase) do |*params|
         TFS::QueryEngine.new(klass, @connection, params)
       end
     end

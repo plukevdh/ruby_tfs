@@ -4,6 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.add_dependency 'ruby_odata'
+
   spec.add_development_dependency 'bundler', '~> 1.0'
 
   spec.authors = ["Luke van der Hoeven"]

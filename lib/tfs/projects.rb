@@ -7,7 +7,7 @@ module TFS
       #     TFS::Projects.find("BFG")
       #
       def find(name)
-        TFS.projects("'#{name}'").run.first
+        TFS.projects(name).run.first
       end
     end
   end

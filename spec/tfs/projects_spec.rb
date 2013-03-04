@@ -1,7 +1,8 @@
 require 'spec_helper'
 
-describe TFS::Changesets do
+describe TFS::Projects do
   let(:client) { TFS.client }
+
   before do
     TFS.configure do |config|
       config.endpoint = "https://codeplexodata.cloudapp.net/TFS29"
@@ -11,22 +12,22 @@ describe TFS::Changesets do
   end
 
   context "finders" do
-    use_vcr_cassette 'changesets'
+    use_vcr_cassette 'projects'
 
-    it "can get changesets from TFS" do
-      results = TFS::Changesets.all
-      results.count.should == 2
+    it "can get projects from TFS" do
+      results = TFS::Projects.all
+      results.count.should == 1
     end
 
     it "can get a project by name" do
-      result = TFS::Changesets.find(23460)
-      result.Comment.should =~ /use the repo to persist\/update/
+      result = TFS::Projects.find('rubytfs')
+      result.Name.should == 'rubytfs'
     end
 
     it "can query in the raw" do
-      results = TFS::Changesets.odata_query("Committer eq 'plukevdh_cp'").run
+      results = TFS::Projects.odata_query("startswith(Name,'rubytfs')").run
       results.each do |build|
-        build.Committer.should end_with 'plukevdh_cp'
+        build.Name.should start_with 'rubytfs'
       end
       results.count.should == 1
     end

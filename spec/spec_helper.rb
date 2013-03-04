@@ -1,6 +1,7 @@
 require 'rspec'
 require 'vcr'
 require 'simplecov'
+require 'pry'
 
 require_relative "../lib/tfs"
 

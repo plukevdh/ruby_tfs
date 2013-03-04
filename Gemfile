@@ -1,6 +1,7 @@
 source :rubygems
 
 gem 'rake'
+gem 'activesupport'
 
 group :development do
   gem 'pry'
