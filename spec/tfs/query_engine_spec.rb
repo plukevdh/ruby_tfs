@@ -25,18 +25,6 @@ describe TFS::QueryEngine do
     query.limit(10).order_by("Reason")
   end
 
-  it "can include other results" do
-    native_query.should_receive(:expand).with('Changesets').and_return(native_query).once
-
-    query.include(TFS::Changesets)
-  end
-
-  it "raises error if expand by invalid class" do
-    expect { query.include('String') }.to raise_error(TypeError)
-
-    native_query.should_not have_received(:expand)
-  end
-
   it "can cause pagination" do
     native_query.should_receive(:skip).with(10)
     query.page(10)

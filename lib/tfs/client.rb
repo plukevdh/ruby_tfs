@@ -23,7 +23,7 @@ module TFS
 
     # Creates the connection to the data provider source
     def connect
-      @connection = @provider.new endpoint, opts_for_connection
+      @connection ||= @provider.new endpoint, opts_for_connection
     end
 
     [TFS::Builds, TFS::Changesets, TFS::Projects, TFS::WorkItems].each do |klass|
