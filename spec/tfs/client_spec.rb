@@ -34,8 +34,9 @@ describe TFS::Client do
     end
 
     it "can query with a nice api" do
-      project = client.projects("RJR").run
-      project.Name.should == "RJR"
+      project = client.projects("rubytfs").run
+      project.size.should == 1
+      project.first.Name.should == "rubytfs"
     end
   end
 end

@@ -25,7 +25,7 @@ http_interactions:
       Content-Type:
       - application/xml;charset=utf-8
       Expires:
-      - Wed, 06 Mar 2013 00:37:23 GMT
+      - Wed, 06 Mar 2013 15:53:04 GMT
       Vary:
       - ! '*'
       Server:
@@ -37,7 +37,7 @@ http_interactions:
       X-Powered-By:
       - ASP.NET
       Date:
-      - Wed, 06 Mar 2013 00:36:53 GMT
+      - Wed, 06 Mar 2013 15:52:34 GMT
     body:
       encoding: US-ASCII
       string: ! "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>\r\n<edmx:Edmx
@@ -303,7 +303,7 @@ http_interactions:
         \       <FunctionImport Name=\"TriggerBuild\" m:HttpMethod=\"POST\" />\r\n
         \     </EntityContainer>\r\n    </Schema>\r\n  </edmx:DataServices>\r\n</edmx:Edmx>"
     http_version: 
-  recorded_at: Wed, 06 Mar 2013 00:36:53 GMT
+  recorded_at: Wed, 06 Mar 2013 15:52:35 GMT
 - request:
     method: get
     uri: https://snd%5Cplukevdh_cp:garbage@codeplexodata.cloudapp.net/TFS29/Builds()?$top=50
@@ -329,7 +329,7 @@ http_interactions:
       Content-Type:
       - application/atom+xml;charset=utf-8
       Expires:
-      - Wed, 06 Mar 2013 00:37:23 GMT
+      - Wed, 06 Mar 2013 15:53:04 GMT
       Vary:
       - ! '*'
       Server:
@@ -341,18 +341,18 @@ http_interactions:
       X-Powered-By:
       - ASP.NET
       Date:
-      - Wed, 06 Mar 2013 00:37:03 GMT
+      - Wed, 06 Mar 2013 15:52:46 GMT
     body:
       encoding: US-ASCII
       string: ! "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>\r\n<feed
         xml:base=\"https://codeplexodata.cloudapp.net/TFS29/\" xmlns:d=\"http://schemas.microsoft.com/ado/2007/08/dataservices\"
         xmlns:m=\"http://schemas.microsoft.com/ado/2007/08/dataservices/metadata\"
         xmlns=\"http://www.w3.org/2005/Atom\">\r\n  <title type=\"text\">Builds</title>\r\n
-        \ <id>https://codeplexodata.cloudapp.net/TFS29/Builds()/</id>\r\n  <updated>2013-03-06T00:37:03Z</updated>\r\n
+        \ <id>https://codeplexodata.cloudapp.net/TFS29/Builds()/</id>\r\n  <updated>2013-03-06T15:52:46Z</updated>\r\n
         \ <author>\r\n    <name />\r\n  </author>\r\n  <link rel=\"self\" title=\"Builds\"
         href=\"Builds\" />\r\n</feed>"
     http_version: 
-  recorded_at: Wed, 06 Mar 2013 00:37:03 GMT
+  recorded_at: Wed, 06 Mar 2013 15:52:46 GMT
 - request:
     method: get
     uri: https://snd%5Cplukevdh_cp:garbage@codeplexodata.cloudapp.net/TFS29/Builds()?$filter=Status%20eq%20'Succeeded'&$top=5
@@ -378,7 +378,7 @@ http_interactions:
       Content-Type:
       - application/atom+xml;charset=utf-8
       Expires:
-      - Wed, 06 Mar 2013 00:37:33 GMT
+      - Wed, 06 Mar 2013 15:53:15 GMT
       Vary:
       - ! '*'
       Server:
@@ -390,16 +390,16 @@ http_interactions:
       X-Powered-By:
       - ASP.NET
       Date:
-      - Wed, 06 Mar 2013 00:37:04 GMT
+      - Wed, 06 Mar 2013 15:52:47 GMT
     body:
       encoding: US-ASCII
       string: ! "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>\r\n<feed
         xml:base=\"https://codeplexodata.cloudapp.net/TFS29/\" xmlns:d=\"http://schemas.microsoft.com/ado/2007/08/dataservices\"
         xmlns:m=\"http://schemas.microsoft.com/ado/2007/08/dataservices/metadata\"
         xmlns=\"http://www.w3.org/2005/Atom\">\r\n  <title type=\"text\">Builds</title>\r\n
-        \ <id>https://codeplexodata.cloudapp.net/TFS29/Builds()/</id>\r\n  <updated>2013-03-06T00:37:04Z</updated>\r\n
+        \ <id>https://codeplexodata.cloudapp.net/TFS29/Builds()/</id>\r\n  <updated>2013-03-06T15:52:47Z</updated>\r\n
         \ <author>\r\n    <name />\r\n  </author>\r\n  <link rel=\"self\" title=\"Builds\"
         href=\"Builds\" />\r\n</feed>"
     http_version: 
-  recorded_at: Wed, 06 Mar 2013 00:37:04 GMT
+  recorded_at: Wed, 06 Mar 2013 15:52:48 GMT
 recorded_with: VCR 2.4.0
