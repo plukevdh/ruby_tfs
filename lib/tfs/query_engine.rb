@@ -1,6 +1,7 @@
 require 'tfs/queryable'
 require 'tfs/builds'
 require 'tfs/changesets'
+require 'tfs/changes'
 require 'tfs/projects'
 
 require 'tfs/work_items'
@@ -18,7 +19,8 @@ module TFS
       TFS::Builds,
       TFS::Changesets,
       TFS::Projects,
-      TFS::WorkItems
+      TFS::WorkItems,
+      TFS::Changes
     ]
 
     # Default pagination `#all` limit

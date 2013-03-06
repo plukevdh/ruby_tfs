@@ -26,7 +26,7 @@ module TFS
       @connection ||= @provider.new endpoint, opts_for_connection
     end
 
-    [TFS::Builds, TFS::Changesets, TFS::Projects, TFS::WorkItems].each do |klass|
+    TFS::QueryEngine::VALID_CLASSES.each do |klass|
       define_method(base_class(klass).downcase) do |*params|
         TFS::QueryEngine.new(klass, @connection, params)
       end
