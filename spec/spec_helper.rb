@@ -3,12 +3,14 @@ require 'vcr'
 require 'simplecov'
 require 'pry'
 
-require_relative "../lib/tfs"
 
 SimpleCov.start do
   add_filter "spec/"
   add_filter ".gems/"
 end
+
+require_relative "../lib/tfs"
+
 
 VCR.configure do |config|
   config.cassette_library_dir     = 'spec/fixtures/cassettes'
