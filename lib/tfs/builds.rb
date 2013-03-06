@@ -23,8 +23,8 @@ module TFS
       #
       def find(definition, project, number)
         begin
-          TFS.builds("Definition='#{definition}',Project='#{project}',Number='#{number}'").run.first
-        rescue RestClient::BadRequest => e
+          TFS.builds(definition: definition, project: project, number: number).run.first
+        rescue RestClient::ResourceNotFound => e
           raise Queryable::RecordNotFound, "No record found for '#{definition}', '#{project}', #{number}"
         end
       end
