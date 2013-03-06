@@ -9,7 +9,7 @@ GIT
 PATH
   remote: .
   specs:
-    ruby_tfs (0.0.2)
+    ruby_tfs (0.0.3)
       ruby_odata
 
 GEM
