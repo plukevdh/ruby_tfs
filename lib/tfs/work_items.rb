@@ -1,7 +1,5 @@
 module TFS
   class WorkItems < Queryable
-    TYPES = []
-
     InvalidRecord = Class.new(StandardError)
 
     REQUIRED_PARAMS = [

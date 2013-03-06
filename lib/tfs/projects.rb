@@ -3,6 +3,8 @@ require 'tfs/work_items'
 module TFS
   class Projects < Queryable
     add_child TFS::WorkItems
+    add_child TFS::Builds
+    add_child TFS::Changesets
 
     class << self
       # Projects can be found by name alone
