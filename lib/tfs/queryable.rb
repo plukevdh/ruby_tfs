@@ -10,14 +10,12 @@ module TFS
 
       def inherited(klass)
         klass.instance_eval do
+          @children = []
+
           def add_child(child_class)
 
-            klass.class_eval do
-              define_method method_name_from_class(child_class).to_sym do
-
-              end
-            end
-
+            base = method_name_from_class(child_class).to_sym
+            self.send(:define_singleton_method, "#{base}?") { true }
           end
         end
       end

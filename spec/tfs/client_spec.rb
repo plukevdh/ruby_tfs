@@ -18,25 +18,45 @@ describe TFS::Client do
   end
 
   context "with odata" do
-    use_vcr_cassette "changesets"
-
     let(:client) { TFS::Client.new(endpoint: "https://codeplexodata.cloudapp.net/TFS29",
       username: 'snd\plukevdh_cp', password: 'garbage') }
 
-    before do
-      client.connect
+    context "individual queries" do
+      use_vcr_cassette "changeset_queries"
+
+      before do
+        client.connect
+      end
+
+      it "creates queries for data" do
+        results = client.changesets
+        results.should be_a(TFS::QueryEngine)
+        results.type.should == TFS::Changesets
+      end
+
+      it "can query with a nice api" do
+        project = client.projects("rubytfs").run
+        project.size.should == 1
+        project.first.Name.should == "rubytfs"
+      end
     end
 
-    it "creates queries for data" do
-      results = client.changesets
-      results.should be_a(TFS::QueryEngine)
-      results.type.should == TFS::Changesets
-    end
+    context "sub queries" do
+      use_vcr_cassette "project_workitems_queries"
 
-    it "can query with a nice api" do
-      project = client.projects("rubytfs").run
-      project.size.should == 1
-      project.first.Name.should == "rubytfs"
+      before do
+        client.connect
+      end
+
+      it "can traverse/filter by sub items (children)" do
+        work_items = client.projects('rubytfs').workitems.run
+        work_items.count.should == 19
+        work_items.first.should be_a WorkItem
+      end
+
+      it "can't traverse unrelated items" do
+        expect { client.projects('rubytfs').weed }.to raise_error(NoMethodError)
+      end
     end
   end
 end

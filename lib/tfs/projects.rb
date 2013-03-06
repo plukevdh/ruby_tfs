@@ -1,7 +1,10 @@
+require 'tfs/work_items'
+
 module TFS
   class Projects < Queryable
-    class << self
+    add_child TFS::WorkItems
 
+    class << self
       # Projects can be found by name alone
       #
       #     TFS::Projects.find("BFG")

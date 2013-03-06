@@ -1,0 +1,793 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://snd%5Cplukevdh_cp:garbage@codeplexodata.cloudapp.net/TFS29/Projects('rubytfs')/WorkItems
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Length:
+      - '39688'
+      Content-Type:
+      - application/atom+xml;charset=utf-8
+      Expires:
+      - Wed, 06 Mar 2013 16:49:19 GMT
+      Vary:
+      - ! '*'
+      Server:
+      - Microsoft-IIS/7.0
+      Dataserviceversion:
+      - 2.0;
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Wed, 06 Mar 2013 16:49:01 GMT
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>\r\n<feed
+        xml:base=\"https://codeplexodata.cloudapp.net/TFS29/\" xmlns:d=\"http://schemas.microsoft.com/ado/2007/08/dataservices\"
+        xmlns:m=\"http://schemas.microsoft.com/ado/2007/08/dataservices/metadata\"
+        xmlns=\"http://www.w3.org/2005/Atom\">\r\n  <title type=\"text\">WorkItems</title>\r\n
+        \ <id>https://codeplexodata.cloudapp.net/TFS29/Projects('rubytfs')/WorkItems/</id>\r\n
+        \ <updated>2013-03-06T16:48:51Z</updated>\r\n  <link rel=\"self\" title=\"WorkItems\"
+        href=\"WorkItems\" />\r\n  <entry m:etag=\"W/&quot;datetime'2013-03-05T16%3A45%3A35.89%2B00%3A00'&quot;\">\r\n
+        \   <id>https://codeplexodata.cloudapp.net/TFS29/WorkItems(1234)</id>\r\n
+        \   <title type=\"text\">Make It All Work</title>\r\n    <summary type=\"text\"></summary>\r\n
+        \   <updated>2013-03-05T16:45:35Z</updated>\r\n    <author>\r\n      <name
+        />\r\n    </author>\r\n    <link rel=\"edit\" title=\"WorkItem\" href=\"WorkItems(1234)\"
+        />\r\n    <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/Attachments\"
+        type=\"application/atom+xml;type=feed\" title=\"Attachments\" href=\"WorkItems(1234)/Attachments\"
+        />\r\n    <category term=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.WorkItem\"
+        scheme=\"http://schemas.microsoft.com/ado/2007/08/dataservices/scheme\" />\r\n
+        \   <content type=\"application/xml\">\r\n      <m:properties>\r\n        <d:Id
+        m:type=\"Edm.Int32\">1234</d:Id>\r\n        <d:AreaPath>rubytfs</d:AreaPath>\r\n
+        \       <d:IterationPath>rubytfs</d:IterationPath>\r\n        <d:Revision
+        m:type=\"Edm.Int32\">2</d:Revision>\r\n        <d:Priority>Medium</d:Priority>\r\n
+        \       <d:Severity m:null=\"true\" />\r\n        <d:StackRank m:null=\"true\"
+        />\r\n        <d:Project>rubytfs</d:Project>\r\n        <d:AssignedTo>plukevdh_cp</d:AssignedTo>\r\n
+        \       <d:CreatedDate m:type=\"Edm.DateTime\">2013-03-05T16:45:28.293+00:00</d:CreatedDate>\r\n
+        \       <d:CreatedBy>MCLWEB</d:CreatedBy>\r\n        <d:ChangedDate m:type=\"Edm.DateTime\">2013-03-05T16:45:35.89+00:00</d:ChangedDate>\r\n
+        \       <d:ChangedBy>MCLWEB</d:ChangedBy>\r\n        <d:ResolvedBy m:null=\"true\"
+        />\r\n        <d:Title>Make It All Work</d:Title>\r\n        <d:State>Active</d:State>\r\n
+        \       <d:Type>Work Item</d:Type>\r\n        <d:Reason>Accepted</d:Reason>\r\n
+        \       <d:Description></d:Description>\r\n        <d:ReproSteps m:null=\"true\"
+        />\r\n        <d:FoundInBuild m:null=\"true\" />\r\n        <d:IntegratedInBuild
+        m:null=\"true\" />\r\n        <d:WebEditorUrl>https://tfs.codeplex.com/tfs/web/wi.aspx?pcguid=6d081351-a130-4f95-a3e6-486afb32637a&amp;id=1234</d:WebEditorUrl>\r\n
+        \     </m:properties>\r\n    </content>\r\n  </entry>\r\n  <entry m:etag=\"W/&quot;datetime'2013-03-05T16%3A45%3A53.3%2B00%3A00'&quot;\">\r\n
+        \   <id>https://codeplexodata.cloudapp.net/TFS29/WorkItems(1235)</id>\r\n
+        \   <title type=\"text\">Bake Cookies</title>\r\n    <summary type=\"text\"></summary>\r\n
+        \   <updated>2013-03-05T16:45:53Z</updated>\r\n    <author>\r\n      <name
+        />\r\n    </author>\r\n    <link rel=\"edit\" title=\"WorkItem\" href=\"WorkItems(1235)\"
+        />\r\n    <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/Attachments\"
+        type=\"application/atom+xml;type=feed\" title=\"Attachments\" href=\"WorkItems(1235)/Attachments\"
+        />\r\n    <category term=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.WorkItem\"
+        scheme=\"http://schemas.microsoft.com/ado/2007/08/dataservices/scheme\" />\r\n
+        \   <content type=\"application/xml\">\r\n      <m:properties>\r\n        <d:Id
+        m:type=\"Edm.Int32\">1235</d:Id>\r\n        <d:AreaPath>rubytfs</d:AreaPath>\r\n
+        \       <d:IterationPath>rubytfs</d:IterationPath>\r\n        <d:Revision
+        m:type=\"Edm.Int32\">1</d:Revision>\r\n        <d:Priority></d:Priority>\r\n
+        \       <d:Severity m:null=\"true\" />\r\n        <d:StackRank m:null=\"true\"
+        />\r\n        <d:Project>rubytfs</d:Project>\r\n        <d:AssignedTo></d:AssignedTo>\r\n
+        \       <d:CreatedDate m:type=\"Edm.DateTime\">2013-03-05T16:45:53.3+00:00</d:CreatedDate>\r\n
+        \       <d:CreatedBy>MCLWEB</d:CreatedBy>\r\n        <d:ChangedDate m:type=\"Edm.DateTime\">2013-03-05T16:45:53.3+00:00</d:ChangedDate>\r\n
+        \       <d:ChangedBy>MCLWEB</d:ChangedBy>\r\n        <d:ResolvedBy m:null=\"true\"
+        />\r\n        <d:Title>Bake Cookies</d:Title>\r\n        <d:State>Proposed</d:State>\r\n
+        \       <d:Type>Work Item</d:Type>\r\n        <d:Reason>New</d:Reason>\r\n
+        \       <d:Description></d:Description>\r\n        <d:ReproSteps m:null=\"true\"
+        />\r\n        <d:FoundInBuild m:null=\"true\" />\r\n        <d:IntegratedInBuild
+        m:null=\"true\" />\r\n        <d:WebEditorUrl>https://tfs.codeplex.com/tfs/web/wi.aspx?pcguid=6d081351-a130-4f95-a3e6-486afb32637a&amp;id=1235</d:WebEditorUrl>\r\n
+        \     </m:properties>\r\n    </content>\r\n  </entry>\r\n  <entry m:etag=\"W/&quot;datetime'2013-03-05T16%3A46%3A09.817%2B00%3A00'&quot;\">\r\n
+        \   <id>https://codeplexodata.cloudapp.net/TFS29/WorkItems(1236)</id>\r\n
+        \   <title type=\"text\">Get Ingredients</title>\r\n    <summary type=\"text\"></summary>\r\n
+        \   <updated>2013-03-05T16:46:09Z</updated>\r\n    <author>\r\n      <name
+        />\r\n    </author>\r\n    <link rel=\"edit\" title=\"WorkItem\" href=\"WorkItems(1236)\"
+        />\r\n    <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/Attachments\"
+        type=\"application/atom+xml;type=feed\" title=\"Attachments\" href=\"WorkItems(1236)/Attachments\"
+        />\r\n    <category term=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.WorkItem\"
+        scheme=\"http://schemas.microsoft.com/ado/2007/08/dataservices/scheme\" />\r\n
+        \   <content type=\"application/xml\">\r\n      <m:properties>\r\n        <d:Id
+        m:type=\"Edm.Int32\">1236</d:Id>\r\n        <d:AreaPath>rubytfs</d:AreaPath>\r\n
+        \       <d:IterationPath>rubytfs</d:IterationPath>\r\n        <d:Revision
+        m:type=\"Edm.Int32\">1</d:Revision>\r\n        <d:Priority></d:Priority>\r\n
+        \       <d:Severity m:null=\"true\" />\r\n        <d:StackRank m:null=\"true\"
+        />\r\n        <d:Project>rubytfs</d:Project>\r\n        <d:AssignedTo></d:AssignedTo>\r\n
+        \       <d:CreatedDate m:type=\"Edm.DateTime\">2013-03-05T16:46:09.817+00:00</d:CreatedDate>\r\n
+        \       <d:CreatedBy>MCLWEB</d:CreatedBy>\r\n        <d:ChangedDate m:type=\"Edm.DateTime\">2013-03-05T16:46:09.817+00:00</d:ChangedDate>\r\n
+        \       <d:ChangedBy>MCLWEB</d:ChangedBy>\r\n        <d:ResolvedBy m:null=\"true\"
+        />\r\n        <d:Title>Get Ingredients</d:Title>\r\n        <d:State>Proposed</d:State>\r\n
+        \       <d:Type>Work Item</d:Type>\r\n        <d:Reason>New</d:Reason>\r\n
+        \       <d:Description></d:Description>\r\n        <d:ReproSteps m:null=\"true\"
+        />\r\n        <d:FoundInBuild m:null=\"true\" />\r\n        <d:IntegratedInBuild
+        m:null=\"true\" />\r\n        <d:WebEditorUrl>https://tfs.codeplex.com/tfs/web/wi.aspx?pcguid=6d081351-a130-4f95-a3e6-486afb32637a&amp;id=1236</d:WebEditorUrl>\r\n
+        \     </m:properties>\r\n    </content>\r\n  </entry>\r\n  <entry m:etag=\"W/&quot;datetime'2013-03-05T16%3A46%3A34.147%2B00%3A00'&quot;\">\r\n
+        \   <id>https://codeplexodata.cloudapp.net/TFS29/WorkItems(1237)</id>\r\n
+        \   <title type=\"text\">Learn To Spell</title>\r\n    <summary type=\"text\"></summary>\r\n
+        \   <updated>2013-03-05T16:46:34Z</updated>\r\n    <author>\r\n      <name
+        />\r\n    </author>\r\n    <link rel=\"edit\" title=\"WorkItem\" href=\"WorkItems(1237)\"
+        />\r\n    <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/Attachments\"
+        type=\"application/atom+xml;type=feed\" title=\"Attachments\" href=\"WorkItems(1237)/Attachments\"
+        />\r\n    <category term=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.WorkItem\"
+        scheme=\"http://schemas.microsoft.com/ado/2007/08/dataservices/scheme\" />\r\n
+        \   <content type=\"application/xml\">\r\n      <m:properties>\r\n        <d:Id
+        m:type=\"Edm.Int32\">1237</d:Id>\r\n        <d:AreaPath>rubytfs</d:AreaPath>\r\n
+        \       <d:IterationPath>rubytfs</d:IterationPath>\r\n        <d:Revision
+        m:type=\"Edm.Int32\">2</d:Revision>\r\n        <d:Priority></d:Priority>\r\n
+        \       <d:Severity m:null=\"true\" />\r\n        <d:StackRank m:null=\"true\"
+        />\r\n        <d:Project>rubytfs</d:Project>\r\n        <d:AssignedTo></d:AssignedTo>\r\n
+        \       <d:CreatedDate m:type=\"Edm.DateTime\">2013-03-05T16:46:33.997+00:00</d:CreatedDate>\r\n
+        \       <d:CreatedBy>MCLWEB</d:CreatedBy>\r\n        <d:ChangedDate m:type=\"Edm.DateTime\">2013-03-05T16:46:34.147+00:00</d:ChangedDate>\r\n
+        \       <d:ChangedBy>MCLWEB</d:ChangedBy>\r\n        <d:ResolvedBy m:null=\"true\"
+        />\r\n        <d:Title>Learn To Spell</d:Title>\r\n        <d:State>Active</d:State>\r\n
+        \       <d:Type>Work Item</d:Type>\r\n        <d:Reason>Accepted</d:Reason>\r\n
+        \       <d:Description></d:Description>\r\n        <d:ReproSteps m:null=\"true\"
+        />\r\n        <d:FoundInBuild m:null=\"true\" />\r\n        <d:IntegratedInBuild
+        m:null=\"true\" />\r\n        <d:WebEditorUrl>https://tfs.codeplex.com/tfs/web/wi.aspx?pcguid=6d081351-a130-4f95-a3e6-486afb32637a&amp;id=1237</d:WebEditorUrl>\r\n
+        \     </m:properties>\r\n    </content>\r\n  </entry>\r\n  <entry m:etag=\"W/&quot;datetime'2013-03-05T16%3A53%3A35.42%2B00%3A00'&quot;\">\r\n
+        \   <id>https://codeplexodata.cloudapp.net/TFS29/WorkItems(1238)</id>\r\n
+        \   <title type=\"text\">Test</title>\r\n    <summary type=\"text\"></summary>\r\n
+        \   <updated>2013-03-05T16:53:35Z</updated>\r\n    <author>\r\n      <name
+        />\r\n    </author>\r\n    <link rel=\"edit\" title=\"WorkItem\" href=\"WorkItems(1238)\"
+        />\r\n    <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/Attachments\"
+        type=\"application/atom+xml;type=feed\" title=\"Attachments\" href=\"WorkItems(1238)/Attachments\"
+        />\r\n    <category term=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.WorkItem\"
+        scheme=\"http://schemas.microsoft.com/ado/2007/08/dataservices/scheme\" />\r\n
+        \   <content type=\"application/xml\">\r\n      <m:properties>\r\n        <d:Id
+        m:type=\"Edm.Int32\">1238</d:Id>\r\n        <d:AreaPath>rubytfs</d:AreaPath>\r\n
+        \       <d:IterationPath>rubytfs</d:IterationPath>\r\n        <d:Revision
+        m:type=\"Edm.Int32\">1</d:Revision>\r\n        <d:Priority></d:Priority>\r\n
+        \       <d:Severity m:null=\"true\" />\r\n        <d:StackRank m:null=\"true\"
+        />\r\n        <d:Project>rubytfs</d:Project>\r\n        <d:AssignedTo></d:AssignedTo>\r\n
+        \       <d:CreatedDate m:type=\"Edm.DateTime\">2013-03-05T16:53:35.42+00:00</d:CreatedDate>\r\n
+        \       <d:CreatedBy>MCLWEB</d:CreatedBy>\r\n        <d:ChangedDate m:type=\"Edm.DateTime\">2013-03-05T16:53:35.42+00:00</d:ChangedDate>\r\n
+        \       <d:ChangedBy>MCLWEB</d:ChangedBy>\r\n        <d:ResolvedBy m:null=\"true\"
+        />\r\n        <d:Title>Test</d:Title>\r\n        <d:State>Proposed</d:State>\r\n
+        \       <d:Type>Work Item</d:Type>\r\n        <d:Reason>New</d:Reason>\r\n
+        \       <d:Description></d:Description>\r\n        <d:ReproSteps m:null=\"true\"
+        />\r\n        <d:FoundInBuild m:null=\"true\" />\r\n        <d:IntegratedInBuild
+        m:null=\"true\" />\r\n        <d:WebEditorUrl>https://tfs.codeplex.com/tfs/web/wi.aspx?pcguid=6d081351-a130-4f95-a3e6-486afb32637a&amp;id=1238</d:WebEditorUrl>\r\n
+        \     </m:properties>\r\n    </content>\r\n  </entry>\r\n  <entry m:etag=\"W/&quot;datetime'2013-03-05T16%3A55%3A37.04%2B00%3A00'&quot;\">\r\n
+        \   <id>https://codeplexodata.cloudapp.net/TFS29/WorkItems(1239)</id>\r\n
+        \   <title type=\"text\">A Testing Item.</title>\r\n    <summary type=\"text\">A
+        Test WorkItem from ruby_tfs wrapper</summary>\r\n    <updated>2013-03-05T16:55:37Z</updated>\r\n
+        \   <author>\r\n      <name />\r\n    </author>\r\n    <link rel=\"edit\"
+        title=\"WorkItem\" href=\"WorkItems(1239)\" />\r\n    <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/Attachments\"
+        type=\"application/atom+xml;type=feed\" title=\"Attachments\" href=\"WorkItems(1239)/Attachments\"
+        />\r\n    <category term=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.WorkItem\"
+        scheme=\"http://schemas.microsoft.com/ado/2007/08/dataservices/scheme\" />\r\n
+        \   <content type=\"application/xml\">\r\n      <m:properties>\r\n        <d:Id
+        m:type=\"Edm.Int32\">1239</d:Id>\r\n        <d:AreaPath>rubytfs</d:AreaPath>\r\n
+        \       <d:IterationPath>rubytfs</d:IterationPath>\r\n        <d:Revision
+        m:type=\"Edm.Int32\">1</d:Revision>\r\n        <d:Priority></d:Priority>\r\n
+        \       <d:Severity m:null=\"true\" />\r\n        <d:StackRank m:null=\"true\"
+        />\r\n        <d:Project>rubytfs</d:Project>\r\n        <d:AssignedTo>plukevdh_cp</d:AssignedTo>\r\n
+        \       <d:CreatedDate m:type=\"Edm.DateTime\">2013-03-05T16:55:37.04+00:00</d:CreatedDate>\r\n
+        \       <d:CreatedBy>plukevdh_cp</d:CreatedBy>\r\n        <d:ChangedDate m:type=\"Edm.DateTime\">2013-03-05T16:55:37.04+00:00</d:ChangedDate>\r\n
+        \       <d:ChangedBy>plukevdh_cp</d:ChangedBy>\r\n        <d:ResolvedBy m:null=\"true\"
+        />\r\n        <d:Title>A Testing Item.</d:Title>\r\n        <d:State>Proposed</d:State>\r\n
+        \       <d:Type>Work Item</d:Type>\r\n        <d:Reason>New</d:Reason>\r\n
+        \       <d:Description>A Test WorkItem from ruby_tfs wrapper</d:Description>\r\n
+        \       <d:ReproSteps m:null=\"true\" />\r\n        <d:FoundInBuild m:null=\"true\"
+        />\r\n        <d:IntegratedInBuild m:null=\"true\" />\r\n        <d:WebEditorUrl>https://tfs.codeplex.com/tfs/web/wi.aspx?pcguid=6d081351-a130-4f95-a3e6-486afb32637a&amp;id=1239</d:WebEditorUrl>\r\n
+        \     </m:properties>\r\n    </content>\r\n  </entry>\r\n  <entry m:etag=\"W/&quot;datetime'2013-03-05T17%3A05%3A02.413%2B00%3A00'&quot;\">\r\n
+        \   <id>https://codeplexodata.cloudapp.net/TFS29/WorkItems(1240)</id>\r\n
+        \   <title type=\"text\">Actually, I'm updated!!</title>\r\n    <summary type=\"text\">WHAT?!</summary>\r\n
+        \   <updated>2013-03-05T17:05:02Z</updated>\r\n    <author>\r\n      <name
+        />\r\n    </author>\r\n    <link rel=\"edit\" title=\"WorkItem\" href=\"WorkItems(1240)\"
+        />\r\n    <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/Attachments\"
+        type=\"application/atom+xml;type=feed\" title=\"Attachments\" href=\"WorkItems(1240)/Attachments\"
+        />\r\n    <category term=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.WorkItem\"
+        scheme=\"http://schemas.microsoft.com/ado/2007/08/dataservices/scheme\" />\r\n
+        \   <content type=\"application/xml\">\r\n      <m:properties>\r\n        <d:Id
+        m:type=\"Edm.Int32\">1240</d:Id>\r\n        <d:AreaPath>rubytfs</d:AreaPath>\r\n
+        \       <d:IterationPath>rubytfs</d:IterationPath>\r\n        <d:Revision
+        m:type=\"Edm.Int32\">3</d:Revision>\r\n        <d:Priority></d:Priority>\r\n
+        \       <d:Severity m:null=\"true\" />\r\n        <d:StackRank m:null=\"true\"
+        />\r\n        <d:Project>rubytfs</d:Project>\r\n        <d:AssignedTo>plukevdh_cp</d:AssignedTo>\r\n
+        \       <d:CreatedDate m:type=\"Edm.DateTime\">2013-03-05T16:56:42.113+00:00</d:CreatedDate>\r\n
+        \       <d:CreatedBy>plukevdh_cp</d:CreatedBy>\r\n        <d:ChangedDate m:type=\"Edm.DateTime\">2013-03-05T17:05:02.413+00:00</d:ChangedDate>\r\n
+        \       <d:ChangedBy>plukevdh_cp</d:ChangedBy>\r\n        <d:ResolvedBy m:null=\"true\"
+        />\r\n        <d:Title>Actually, I'm updated!!</d:Title>\r\n        <d:State>Proposed</d:State>\r\n
+        \       <d:Type>Work Item</d:Type>\r\n        <d:Reason>New</d:Reason>\r\n
+        \       <d:Description>WHAT?!</d:Description>\r\n        <d:ReproSteps m:null=\"true\"
+        />\r\n        <d:FoundInBuild m:null=\"true\" />\r\n        <d:IntegratedInBuild
+        m:null=\"true\" />\r\n        <d:WebEditorUrl>https://tfs.codeplex.com/tfs/web/wi.aspx?pcguid=6d081351-a130-4f95-a3e6-486afb32637a&amp;id=1240</d:WebEditorUrl>\r\n
+        \     </m:properties>\r\n    </content>\r\n  </entry>\r\n  <entry m:etag=\"W/&quot;datetime'2013-03-05T16%3A58%3A22.647%2B00%3A00'&quot;\">\r\n
+        \   <id>https://codeplexodata.cloudapp.net/TFS29/WorkItems(1241)</id>\r\n
+        \   <title type=\"text\">A Testing Item.</title>\r\n    <summary type=\"text\">A
+        Test WorkItem from ruby_tfs wrapper</summary>\r\n    <updated>2013-03-05T16:58:22Z</updated>\r\n
+        \   <author>\r\n      <name />\r\n    </author>\r\n    <link rel=\"edit\"
+        title=\"WorkItem\" href=\"WorkItems(1241)\" />\r\n    <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/Attachments\"
+        type=\"application/atom+xml;type=feed\" title=\"Attachments\" href=\"WorkItems(1241)/Attachments\"
+        />\r\n    <category term=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.WorkItem\"
+        scheme=\"http://schemas.microsoft.com/ado/2007/08/dataservices/scheme\" />\r\n
+        \   <content type=\"application/xml\">\r\n      <m:properties>\r\n        <d:Id
+        m:type=\"Edm.Int32\">1241</d:Id>\r\n        <d:AreaPath>rubytfs</d:AreaPath>\r\n
+        \       <d:IterationPath>rubytfs</d:IterationPath>\r\n        <d:Revision
+        m:type=\"Edm.Int32\">1</d:Revision>\r\n        <d:Priority></d:Priority>\r\n
+        \       <d:Severity m:null=\"true\" />\r\n        <d:StackRank m:null=\"true\"
+        />\r\n        <d:Project>rubytfs</d:Project>\r\n        <d:AssignedTo>plukevdh_cp</d:AssignedTo>\r\n
+        \       <d:CreatedDate m:type=\"Edm.DateTime\">2013-03-05T16:58:22.647+00:00</d:CreatedDate>\r\n
+        \       <d:CreatedBy>plukevdh_cp</d:CreatedBy>\r\n        <d:ChangedDate m:type=\"Edm.DateTime\">2013-03-05T16:58:22.647+00:00</d:ChangedDate>\r\n
+        \       <d:ChangedBy>plukevdh_cp</d:ChangedBy>\r\n        <d:ResolvedBy m:null=\"true\"
+        />\r\n        <d:Title>A Testing Item.</d:Title>\r\n        <d:State>Proposed</d:State>\r\n
+        \       <d:Type>Work Item</d:Type>\r\n        <d:Reason>New</d:Reason>\r\n
+        \       <d:Description>A Test WorkItem from ruby_tfs wrapper</d:Description>\r\n
+        \       <d:ReproSteps m:null=\"true\" />\r\n        <d:FoundInBuild m:null=\"true\"
+        />\r\n        <d:IntegratedInBuild m:null=\"true\" />\r\n        <d:WebEditorUrl>https://tfs.codeplex.com/tfs/web/wi.aspx?pcguid=6d081351-a130-4f95-a3e6-486afb32637a&amp;id=1241</d:WebEditorUrl>\r\n
+        \     </m:properties>\r\n    </content>\r\n  </entry>\r\n  <entry m:etag=\"W/&quot;datetime'2013-03-05T16%3A59%3A19.433%2B00%3A00'&quot;\">\r\n
+        \   <id>https://codeplexodata.cloudapp.net/TFS29/WorkItems(1242)</id>\r\n
+        \   <title type=\"text\">A Testing Item.</title>\r\n    <summary type=\"text\">A
+        Test WorkItem from ruby_tfs wrapper</summary>\r\n    <updated>2013-03-05T16:59:19Z</updated>\r\n
+        \   <author>\r\n      <name />\r\n    </author>\r\n    <link rel=\"edit\"
+        title=\"WorkItem\" href=\"WorkItems(1242)\" />\r\n    <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/Attachments\"
+        type=\"application/atom+xml;type=feed\" title=\"Attachments\" href=\"WorkItems(1242)/Attachments\"
+        />\r\n    <category term=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.WorkItem\"
+        scheme=\"http://schemas.microsoft.com/ado/2007/08/dataservices/scheme\" />\r\n
+        \   <content type=\"application/xml\">\r\n      <m:properties>\r\n        <d:Id
+        m:type=\"Edm.Int32\">1242</d:Id>\r\n        <d:AreaPath>rubytfs</d:AreaPath>\r\n
+        \       <d:IterationPath>rubytfs</d:IterationPath>\r\n        <d:Revision
+        m:type=\"Edm.Int32\">1</d:Revision>\r\n        <d:Priority></d:Priority>\r\n
+        \       <d:Severity m:null=\"true\" />\r\n        <d:StackRank m:null=\"true\"
+        />\r\n        <d:Project>rubytfs</d:Project>\r\n        <d:AssignedTo>plukevdh_cp</d:AssignedTo>\r\n
+        \       <d:CreatedDate m:type=\"Edm.DateTime\">2013-03-05T16:59:19.433+00:00</d:CreatedDate>\r\n
+        \       <d:CreatedBy>plukevdh_cp</d:CreatedBy>\r\n        <d:ChangedDate m:type=\"Edm.DateTime\">2013-03-05T16:59:19.433+00:00</d:ChangedDate>\r\n
+        \       <d:ChangedBy>plukevdh_cp</d:ChangedBy>\r\n        <d:ResolvedBy m:null=\"true\"
+        />\r\n        <d:Title>A Testing Item.</d:Title>\r\n        <d:State>Proposed</d:State>\r\n
+        \       <d:Type>Work Item</d:Type>\r\n        <d:Reason>New</d:Reason>\r\n
+        \       <d:Description>A Test WorkItem from ruby_tfs wrapper</d:Description>\r\n
+        \       <d:ReproSteps m:null=\"true\" />\r\n        <d:FoundInBuild m:null=\"true\"
+        />\r\n        <d:IntegratedInBuild m:null=\"true\" />\r\n        <d:WebEditorUrl>https://tfs.codeplex.com/tfs/web/wi.aspx?pcguid=6d081351-a130-4f95-a3e6-486afb32637a&amp;id=1242</d:WebEditorUrl>\r\n
+        \     </m:properties>\r\n    </content>\r\n  </entry>\r\n  <entry m:etag=\"W/&quot;datetime'2013-03-05T17%3A00%3A37.793%2B00%3A00'&quot;\">\r\n
+        \   <id>https://codeplexodata.cloudapp.net/TFS29/WorkItems(1243)</id>\r\n
+        \   <title type=\"text\">A Testing Item.</title>\r\n    <summary type=\"text\">A
+        Test WorkItem from ruby_tfs wrapper</summary>\r\n    <updated>2013-03-05T17:00:37Z</updated>\r\n
+        \   <author>\r\n      <name />\r\n    </author>\r\n    <link rel=\"edit\"
+        title=\"WorkItem\" href=\"WorkItems(1243)\" />\r\n    <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/Attachments\"
+        type=\"application/atom+xml;type=feed\" title=\"Attachments\" href=\"WorkItems(1243)/Attachments\"
+        />\r\n    <category term=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.WorkItem\"
+        scheme=\"http://schemas.microsoft.com/ado/2007/08/dataservices/scheme\" />\r\n
+        \   <content type=\"application/xml\">\r\n      <m:properties>\r\n        <d:Id
+        m:type=\"Edm.Int32\">1243</d:Id>\r\n        <d:AreaPath>rubytfs</d:AreaPath>\r\n
+        \       <d:IterationPath>rubytfs</d:IterationPath>\r\n        <d:Revision
+        m:type=\"Edm.Int32\">1</d:Revision>\r\n        <d:Priority></d:Priority>\r\n
+        \       <d:Severity m:null=\"true\" />\r\n        <d:StackRank m:null=\"true\"
+        />\r\n        <d:Project>rubytfs</d:Project>\r\n        <d:AssignedTo>plukevdh_cp</d:AssignedTo>\r\n
+        \       <d:CreatedDate m:type=\"Edm.DateTime\">2013-03-05T17:00:37.793+00:00</d:CreatedDate>\r\n
+        \       <d:CreatedBy>plukevdh_cp</d:CreatedBy>\r\n        <d:ChangedDate m:type=\"Edm.DateTime\">2013-03-05T17:00:37.793+00:00</d:ChangedDate>\r\n
+        \       <d:ChangedBy>plukevdh_cp</d:ChangedBy>\r\n        <d:ResolvedBy m:null=\"true\"
+        />\r\n        <d:Title>A Testing Item.</d:Title>\r\n        <d:State>Proposed</d:State>\r\n
+        \       <d:Type>Work Item</d:Type>\r\n        <d:Reason>New</d:Reason>\r\n
+        \       <d:Description>A Test WorkItem from ruby_tfs wrapper</d:Description>\r\n
+        \       <d:ReproSteps m:null=\"true\" />\r\n        <d:FoundInBuild m:null=\"true\"
+        />\r\n        <d:IntegratedInBuild m:null=\"true\" />\r\n        <d:WebEditorUrl>https://tfs.codeplex.com/tfs/web/wi.aspx?pcguid=6d081351-a130-4f95-a3e6-486afb32637a&amp;id=1243</d:WebEditorUrl>\r\n
+        \     </m:properties>\r\n    </content>\r\n  </entry>\r\n  <entry m:etag=\"W/&quot;datetime'2013-03-05T17%3A02%3A56.63%2B00%3A00'&quot;\">\r\n
+        \   <id>https://codeplexodata.cloudapp.net/TFS29/WorkItems(1244)</id>\r\n
+        \   <title type=\"text\">A Testing Item.</title>\r\n    <summary type=\"text\">A
+        Test WorkItem from ruby_tfs wrapper</summary>\r\n    <updated>2013-03-05T17:02:56Z</updated>\r\n
+        \   <author>\r\n      <name />\r\n    </author>\r\n    <link rel=\"edit\"
+        title=\"WorkItem\" href=\"WorkItems(1244)\" />\r\n    <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/Attachments\"
+        type=\"application/atom+xml;type=feed\" title=\"Attachments\" href=\"WorkItems(1244)/Attachments\"
+        />\r\n    <category term=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.WorkItem\"
+        scheme=\"http://schemas.microsoft.com/ado/2007/08/dataservices/scheme\" />\r\n
+        \   <content type=\"application/xml\">\r\n      <m:properties>\r\n        <d:Id
+        m:type=\"Edm.Int32\">1244</d:Id>\r\n        <d:AreaPath>rubytfs</d:AreaPath>\r\n
+        \       <d:IterationPath>rubytfs</d:IterationPath>\r\n        <d:Revision
+        m:type=\"Edm.Int32\">1</d:Revision>\r\n        <d:Priority></d:Priority>\r\n
+        \       <d:Severity m:null=\"true\" />\r\n        <d:StackRank m:null=\"true\"
+        />\r\n        <d:Project>rubytfs</d:Project>\r\n        <d:AssignedTo>plukevdh_cp</d:AssignedTo>\r\n
+        \       <d:CreatedDate m:type=\"Edm.DateTime\">2013-03-05T17:02:56.63+00:00</d:CreatedDate>\r\n
+        \       <d:CreatedBy>plukevdh_cp</d:CreatedBy>\r\n        <d:ChangedDate m:type=\"Edm.DateTime\">2013-03-05T17:02:56.63+00:00</d:ChangedDate>\r\n
+        \       <d:ChangedBy>plukevdh_cp</d:ChangedBy>\r\n        <d:ResolvedBy m:null=\"true\"
+        />\r\n        <d:Title>A Testing Item.</d:Title>\r\n        <d:State>Proposed</d:State>\r\n
+        \       <d:Type>Work Item</d:Type>\r\n        <d:Reason>New</d:Reason>\r\n
+        \       <d:Description>A Test WorkItem from ruby_tfs wrapper</d:Description>\r\n
+        \       <d:ReproSteps m:null=\"true\" />\r\n        <d:FoundInBuild m:null=\"true\"
+        />\r\n        <d:IntegratedInBuild m:null=\"true\" />\r\n        <d:WebEditorUrl>https://tfs.codeplex.com/tfs/web/wi.aspx?pcguid=6d081351-a130-4f95-a3e6-486afb32637a&amp;id=1244</d:WebEditorUrl>\r\n
+        \     </m:properties>\r\n    </content>\r\n  </entry>\r\n  <entry m:etag=\"W/&quot;datetime'2013-03-05T17%3A15%3A12.453%2B00%3A00'&quot;\">\r\n
+        \   <id>https://codeplexodata.cloudapp.net/TFS29/WorkItems(1245)</id>\r\n
+        \   <title type=\"text\">I'm updated, son!!</title>\r\n    <summary type=\"text\">Actually,
+        I'm updated!!</summary>\r\n    <updated>2013-03-05T17:15:12Z</updated>\r\n
+        \   <author>\r\n      <name />\r\n    </author>\r\n    <link rel=\"edit\"
+        title=\"WorkItem\" href=\"WorkItems(1245)\" />\r\n    <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/Attachments\"
+        type=\"application/atom+xml;type=feed\" title=\"Attachments\" href=\"WorkItems(1245)/Attachments\"
+        />\r\n    <category term=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.WorkItem\"
+        scheme=\"http://schemas.microsoft.com/ado/2007/08/dataservices/scheme\" />\r\n
+        \   <content type=\"application/xml\">\r\n      <m:properties>\r\n        <d:Id
+        m:type=\"Edm.Int32\">1245</d:Id>\r\n        <d:AreaPath>rubytfs</d:AreaPath>\r\n
+        \       <d:IterationPath>rubytfs</d:IterationPath>\r\n        <d:Revision
+        m:type=\"Edm.Int32\">4</d:Revision>\r\n        <d:Priority></d:Priority>\r\n
+        \       <d:Severity m:null=\"true\" />\r\n        <d:StackRank m:null=\"true\"
+        />\r\n        <d:Project>rubytfs</d:Project>\r\n        <d:AssignedTo>plukevdh_cp</d:AssignedTo>\r\n
+        \       <d:CreatedDate m:type=\"Edm.DateTime\">2013-03-05T17:03:28.703+00:00</d:CreatedDate>\r\n
+        \       <d:CreatedBy>plukevdh_cp</d:CreatedBy>\r\n        <d:ChangedDate m:type=\"Edm.DateTime\">2013-03-05T17:15:12.453+00:00</d:ChangedDate>\r\n
+        \       <d:ChangedBy>plukevdh_cp</d:ChangedBy>\r\n        <d:ResolvedBy m:null=\"true\"
+        />\r\n        <d:Title>I'm updated, son!!</d:Title>\r\n        <d:State>Proposed</d:State>\r\n
+        \       <d:Type>Work Item</d:Type>\r\n        <d:Reason>New</d:Reason>\r\n
+        \       <d:Description>Actually, I'm updated!!</d:Description>\r\n        <d:ReproSteps
+        m:null=\"true\" />\r\n        <d:FoundInBuild m:null=\"true\" />\r\n        <d:IntegratedInBuild
+        m:null=\"true\" />\r\n        <d:WebEditorUrl>https://tfs.codeplex.com/tfs/web/wi.aspx?pcguid=6d081351-a130-4f95-a3e6-486afb32637a&amp;id=1245</d:WebEditorUrl>\r\n
+        \     </m:properties>\r\n    </content>\r\n  </entry>\r\n  <entry m:etag=\"W/&quot;datetime'2013-03-05T17%3A12%3A05.48%2B00%3A00'&quot;\">\r\n
+        \   <id>https://codeplexodata.cloudapp.net/TFS29/WorkItems(1246)</id>\r\n
+        \   <title type=\"text\">A Testing Item.</title>\r\n    <summary type=\"text\">A
+        Test WorkItem from ruby_tfs wrapper</summary>\r\n    <updated>2013-03-05T17:12:05Z</updated>\r\n
+        \   <author>\r\n      <name />\r\n    </author>\r\n    <link rel=\"edit\"
+        title=\"WorkItem\" href=\"WorkItems(1246)\" />\r\n    <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/Attachments\"
+        type=\"application/atom+xml;type=feed\" title=\"Attachments\" href=\"WorkItems(1246)/Attachments\"
+        />\r\n    <category term=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.WorkItem\"
+        scheme=\"http://schemas.microsoft.com/ado/2007/08/dataservices/scheme\" />\r\n
+        \   <content type=\"application/xml\">\r\n      <m:properties>\r\n        <d:Id
+        m:type=\"Edm.Int32\">1246</d:Id>\r\n        <d:AreaPath>rubytfs</d:AreaPath>\r\n
+        \       <d:IterationPath>rubytfs</d:IterationPath>\r\n        <d:Revision
+        m:type=\"Edm.Int32\">1</d:Revision>\r\n        <d:Priority></d:Priority>\r\n
+        \       <d:Severity m:null=\"true\" />\r\n        <d:StackRank m:null=\"true\"
+        />\r\n        <d:Project>rubytfs</d:Project>\r\n        <d:AssignedTo>plukevdh_cp</d:AssignedTo>\r\n
+        \       <d:CreatedDate m:type=\"Edm.DateTime\">2013-03-05T17:12:05.48+00:00</d:CreatedDate>\r\n
+        \       <d:CreatedBy>plukevdh_cp</d:CreatedBy>\r\n        <d:ChangedDate m:type=\"Edm.DateTime\">2013-03-05T17:12:05.48+00:00</d:ChangedDate>\r\n
+        \       <d:ChangedBy>plukevdh_cp</d:ChangedBy>\r\n        <d:ResolvedBy m:null=\"true\"
+        />\r\n        <d:Title>A Testing Item.</d:Title>\r\n        <d:State>Proposed</d:State>\r\n
+        \       <d:Type>Work Item</d:Type>\r\n        <d:Reason>New</d:Reason>\r\n
+        \       <d:Description>A Test WorkItem from ruby_tfs wrapper</d:Description>\r\n
+        \       <d:ReproSteps m:null=\"true\" />\r\n        <d:FoundInBuild m:null=\"true\"
+        />\r\n        <d:IntegratedInBuild m:null=\"true\" />\r\n        <d:WebEditorUrl>https://tfs.codeplex.com/tfs/web/wi.aspx?pcguid=6d081351-a130-4f95-a3e6-486afb32637a&amp;id=1246</d:WebEditorUrl>\r\n
+        \     </m:properties>\r\n    </content>\r\n  </entry>\r\n  <entry m:etag=\"W/&quot;datetime'2013-03-05T17%3A13%3A02.26%2B00%3A00'&quot;\">\r\n
+        \   <id>https://codeplexodata.cloudapp.net/TFS29/WorkItems(1247)</id>\r\n
+        \   <title type=\"text\">A Testing Item.</title>\r\n    <summary type=\"text\">A
+        Test WorkItem from ruby_tfs wrapper</summary>\r\n    <updated>2013-03-05T17:13:02Z</updated>\r\n
+        \   <author>\r\n      <name />\r\n    </author>\r\n    <link rel=\"edit\"
+        title=\"WorkItem\" href=\"WorkItems(1247)\" />\r\n    <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/Attachments\"
+        type=\"application/atom+xml;type=feed\" title=\"Attachments\" href=\"WorkItems(1247)/Attachments\"
+        />\r\n    <category term=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.WorkItem\"
+        scheme=\"http://schemas.microsoft.com/ado/2007/08/dataservices/scheme\" />\r\n
+        \   <content type=\"application/xml\">\r\n      <m:properties>\r\n        <d:Id
+        m:type=\"Edm.Int32\">1247</d:Id>\r\n        <d:AreaPath>rubytfs</d:AreaPath>\r\n
+        \       <d:IterationPath>rubytfs</d:IterationPath>\r\n        <d:Revision
+        m:type=\"Edm.Int32\">1</d:Revision>\r\n        <d:Priority></d:Priority>\r\n
+        \       <d:Severity m:null=\"true\" />\r\n        <d:StackRank m:null=\"true\"
+        />\r\n        <d:Project>rubytfs</d:Project>\r\n        <d:AssignedTo>plukevdh_cp</d:AssignedTo>\r\n
+        \       <d:CreatedDate m:type=\"Edm.DateTime\">2013-03-05T17:13:02.26+00:00</d:CreatedDate>\r\n
+        \       <d:CreatedBy>plukevdh_cp</d:CreatedBy>\r\n        <d:ChangedDate m:type=\"Edm.DateTime\">2013-03-05T17:13:02.26+00:00</d:ChangedDate>\r\n
+        \       <d:ChangedBy>plukevdh_cp</d:ChangedBy>\r\n        <d:ResolvedBy m:null=\"true\"
+        />\r\n        <d:Title>A Testing Item.</d:Title>\r\n        <d:State>Proposed</d:State>\r\n
+        \       <d:Type>Work Item</d:Type>\r\n        <d:Reason>New</d:Reason>\r\n
+        \       <d:Description>A Test WorkItem from ruby_tfs wrapper</d:Description>\r\n
+        \       <d:ReproSteps m:null=\"true\" />\r\n        <d:FoundInBuild m:null=\"true\"
+        />\r\n        <d:IntegratedInBuild m:null=\"true\" />\r\n        <d:WebEditorUrl>https://tfs.codeplex.com/tfs/web/wi.aspx?pcguid=6d081351-a130-4f95-a3e6-486afb32637a&amp;id=1247</d:WebEditorUrl>\r\n
+        \     </m:properties>\r\n    </content>\r\n  </entry>\r\n  <entry m:etag=\"W/&quot;datetime'2013-03-05T17%3A13%3A45.317%2B00%3A00'&quot;\">\r\n
+        \   <id>https://codeplexodata.cloudapp.net/TFS29/WorkItems(1248)</id>\r\n
+        \   <title type=\"text\">A Testing Item.</title>\r\n    <summary type=\"text\">A
+        Test WorkItem from ruby_tfs wrapper</summary>\r\n    <updated>2013-03-05T17:13:45Z</updated>\r\n
+        \   <author>\r\n      <name />\r\n    </author>\r\n    <link rel=\"edit\"
+        title=\"WorkItem\" href=\"WorkItems(1248)\" />\r\n    <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/Attachments\"
+        type=\"application/atom+xml;type=feed\" title=\"Attachments\" href=\"WorkItems(1248)/Attachments\"
+        />\r\n    <category term=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.WorkItem\"
+        scheme=\"http://schemas.microsoft.com/ado/2007/08/dataservices/scheme\" />\r\n
+        \   <content type=\"application/xml\">\r\n      <m:properties>\r\n        <d:Id
+        m:type=\"Edm.Int32\">1248</d:Id>\r\n        <d:AreaPath>rubytfs</d:AreaPath>\r\n
+        \       <d:IterationPath>rubytfs</d:IterationPath>\r\n        <d:Revision
+        m:type=\"Edm.Int32\">1</d:Revision>\r\n        <d:Priority></d:Priority>\r\n
+        \       <d:Severity m:null=\"true\" />\r\n        <d:StackRank m:null=\"true\"
+        />\r\n        <d:Project>rubytfs</d:Project>\r\n        <d:AssignedTo>plukevdh_cp</d:AssignedTo>\r\n
+        \       <d:CreatedDate m:type=\"Edm.DateTime\">2013-03-05T17:13:45.317+00:00</d:CreatedDate>\r\n
+        \       <d:CreatedBy>plukevdh_cp</d:CreatedBy>\r\n        <d:ChangedDate m:type=\"Edm.DateTime\">2013-03-05T17:13:45.317+00:00</d:ChangedDate>\r\n
+        \       <d:ChangedBy>plukevdh_cp</d:ChangedBy>\r\n        <d:ResolvedBy m:null=\"true\"
+        />\r\n        <d:Title>A Testing Item.</d:Title>\r\n        <d:State>Proposed</d:State>\r\n
+        \       <d:Type>Work Item</d:Type>\r\n        <d:Reason>New</d:Reason>\r\n
+        \       <d:Description>A Test WorkItem from ruby_tfs wrapper</d:Description>\r\n
+        \       <d:ReproSteps m:null=\"true\" />\r\n        <d:FoundInBuild m:null=\"true\"
+        />\r\n        <d:IntegratedInBuild m:null=\"true\" />\r\n        <d:WebEditorUrl>https://tfs.codeplex.com/tfs/web/wi.aspx?pcguid=6d081351-a130-4f95-a3e6-486afb32637a&amp;id=1248</d:WebEditorUrl>\r\n
+        \     </m:properties>\r\n    </content>\r\n  </entry>\r\n  <entry m:etag=\"W/&quot;datetime'2013-03-05T17%3A14%3A28.3%2B00%3A00'&quot;\">\r\n
+        \   <id>https://codeplexodata.cloudapp.net/TFS29/WorkItems(1249)</id>\r\n
+        \   <title type=\"text\">A Testing Item.</title>\r\n    <summary type=\"text\">A
+        Test WorkItem from ruby_tfs wrapper</summary>\r\n    <updated>2013-03-05T17:14:28Z</updated>\r\n
+        \   <author>\r\n      <name />\r\n    </author>\r\n    <link rel=\"edit\"
+        title=\"WorkItem\" href=\"WorkItems(1249)\" />\r\n    <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/Attachments\"
+        type=\"application/atom+xml;type=feed\" title=\"Attachments\" href=\"WorkItems(1249)/Attachments\"
+        />\r\n    <category term=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.WorkItem\"
+        scheme=\"http://schemas.microsoft.com/ado/2007/08/dataservices/scheme\" />\r\n
+        \   <content type=\"application/xml\">\r\n      <m:properties>\r\n        <d:Id
+        m:type=\"Edm.Int32\">1249</d:Id>\r\n        <d:AreaPath>rubytfs</d:AreaPath>\r\n
+        \       <d:IterationPath>rubytfs</d:IterationPath>\r\n        <d:Revision
+        m:type=\"Edm.Int32\">1</d:Revision>\r\n        <d:Priority></d:Priority>\r\n
+        \       <d:Severity m:null=\"true\" />\r\n        <d:StackRank m:null=\"true\"
+        />\r\n        <d:Project>rubytfs</d:Project>\r\n        <d:AssignedTo>plukevdh_cp</d:AssignedTo>\r\n
+        \       <d:CreatedDate m:type=\"Edm.DateTime\">2013-03-05T17:14:28.3+00:00</d:CreatedDate>\r\n
+        \       <d:CreatedBy>plukevdh_cp</d:CreatedBy>\r\n        <d:ChangedDate m:type=\"Edm.DateTime\">2013-03-05T17:14:28.3+00:00</d:ChangedDate>\r\n
+        \       <d:ChangedBy>plukevdh_cp</d:ChangedBy>\r\n        <d:ResolvedBy m:null=\"true\"
+        />\r\n        <d:Title>A Testing Item.</d:Title>\r\n        <d:State>Proposed</d:State>\r\n
+        \       <d:Type>Work Item</d:Type>\r\n        <d:Reason>New</d:Reason>\r\n
+        \       <d:Description>A Test WorkItem from ruby_tfs wrapper</d:Description>\r\n
+        \       <d:ReproSteps m:null=\"true\" />\r\n        <d:FoundInBuild m:null=\"true\"
+        />\r\n        <d:IntegratedInBuild m:null=\"true\" />\r\n        <d:WebEditorUrl>https://tfs.codeplex.com/tfs/web/wi.aspx?pcguid=6d081351-a130-4f95-a3e6-486afb32637a&amp;id=1249</d:WebEditorUrl>\r\n
+        \     </m:properties>\r\n    </content>\r\n  </entry>\r\n  <entry m:etag=\"W/&quot;datetime'2013-03-05T17%3A15%3A02.35%2B00%3A00'&quot;\">\r\n
+        \   <id>https://codeplexodata.cloudapp.net/TFS29/WorkItems(1250)</id>\r\n
+        \   <title type=\"text\">A Testing Item.</title>\r\n    <summary type=\"text\">A
+        Test WorkItem from ruby_tfs wrapper</summary>\r\n    <updated>2013-03-05T17:15:02Z</updated>\r\n
+        \   <author>\r\n      <name />\r\n    </author>\r\n    <link rel=\"edit\"
+        title=\"WorkItem\" href=\"WorkItems(1250)\" />\r\n    <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/Attachments\"
+        type=\"application/atom+xml;type=feed\" title=\"Attachments\" href=\"WorkItems(1250)/Attachments\"
+        />\r\n    <category term=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.WorkItem\"
+        scheme=\"http://schemas.microsoft.com/ado/2007/08/dataservices/scheme\" />\r\n
+        \   <content type=\"application/xml\">\r\n      <m:properties>\r\n        <d:Id
+        m:type=\"Edm.Int32\">1250</d:Id>\r\n        <d:AreaPath>rubytfs</d:AreaPath>\r\n
+        \       <d:IterationPath>rubytfs</d:IterationPath>\r\n        <d:Revision
+        m:type=\"Edm.Int32\">1</d:Revision>\r\n        <d:Priority></d:Priority>\r\n
+        \       <d:Severity m:null=\"true\" />\r\n        <d:StackRank m:null=\"true\"
+        />\r\n        <d:Project>rubytfs</d:Project>\r\n        <d:AssignedTo>plukevdh_cp</d:AssignedTo>\r\n
+        \       <d:CreatedDate m:type=\"Edm.DateTime\">2013-03-05T17:15:02.35+00:00</d:CreatedDate>\r\n
+        \       <d:CreatedBy>plukevdh_cp</d:CreatedBy>\r\n        <d:ChangedDate m:type=\"Edm.DateTime\">2013-03-05T17:15:02.35+00:00</d:ChangedDate>\r\n
+        \       <d:ChangedBy>plukevdh_cp</d:ChangedBy>\r\n        <d:ResolvedBy m:null=\"true\"
+        />\r\n        <d:Title>A Testing Item.</d:Title>\r\n        <d:State>Proposed</d:State>\r\n
+        \       <d:Type>Work Item</d:Type>\r\n        <d:Reason>New</d:Reason>\r\n
+        \       <d:Description>A Test WorkItem from ruby_tfs wrapper</d:Description>\r\n
+        \       <d:ReproSteps m:null=\"true\" />\r\n        <d:FoundInBuild m:null=\"true\"
+        />\r\n        <d:IntegratedInBuild m:null=\"true\" />\r\n        <d:WebEditorUrl>https://tfs.codeplex.com/tfs/web/wi.aspx?pcguid=6d081351-a130-4f95-a3e6-486afb32637a&amp;id=1250</d:WebEditorUrl>\r\n
+        \     </m:properties>\r\n    </content>\r\n  </entry>\r\n  <entry m:etag=\"W/&quot;datetime'2013-03-05T17%3A18%3A13.42%2B00%3A00'&quot;\">\r\n
+        \   <id>https://codeplexodata.cloudapp.net/TFS29/WorkItems(1251)</id>\r\n
+        \   <title type=\"text\">A Testing Item.</title>\r\n    <summary type=\"text\">A
+        Test WorkItem from ruby_tfs wrapper</summary>\r\n    <updated>2013-03-05T17:18:13Z</updated>\r\n
+        \   <author>\r\n      <name />\r\n    </author>\r\n    <link rel=\"edit\"
+        title=\"WorkItem\" href=\"WorkItems(1251)\" />\r\n    <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/Attachments\"
+        type=\"application/atom+xml;type=feed\" title=\"Attachments\" href=\"WorkItems(1251)/Attachments\"
+        />\r\n    <category term=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.WorkItem\"
+        scheme=\"http://schemas.microsoft.com/ado/2007/08/dataservices/scheme\" />\r\n
+        \   <content type=\"application/xml\">\r\n      <m:properties>\r\n        <d:Id
+        m:type=\"Edm.Int32\">1251</d:Id>\r\n        <d:AreaPath>rubytfs</d:AreaPath>\r\n
+        \       <d:IterationPath>rubytfs</d:IterationPath>\r\n        <d:Revision
+        m:type=\"Edm.Int32\">1</d:Revision>\r\n        <d:Priority></d:Priority>\r\n
+        \       <d:Severity m:null=\"true\" />\r\n        <d:StackRank m:null=\"true\"
+        />\r\n        <d:Project>rubytfs</d:Project>\r\n        <d:AssignedTo>plukevdh_cp</d:AssignedTo>\r\n
+        \       <d:CreatedDate m:type=\"Edm.DateTime\">2013-03-05T17:18:13.42+00:00</d:CreatedDate>\r\n
+        \       <d:CreatedBy>plukevdh_cp</d:CreatedBy>\r\n        <d:ChangedDate m:type=\"Edm.DateTime\">2013-03-05T17:18:13.42+00:00</d:ChangedDate>\r\n
+        \       <d:ChangedBy>plukevdh_cp</d:ChangedBy>\r\n        <d:ResolvedBy m:null=\"true\"
+        />\r\n        <d:Title>A Testing Item.</d:Title>\r\n        <d:State>Proposed</d:State>\r\n
+        \       <d:Type>Work Item</d:Type>\r\n        <d:Reason>New</d:Reason>\r\n
+        \       <d:Description>A Test WorkItem from ruby_tfs wrapper</d:Description>\r\n
+        \       <d:ReproSteps m:null=\"true\" />\r\n        <d:FoundInBuild m:null=\"true\"
+        />\r\n        <d:IntegratedInBuild m:null=\"true\" />\r\n        <d:WebEditorUrl>https://tfs.codeplex.com/tfs/web/wi.aspx?pcguid=6d081351-a130-4f95-a3e6-486afb32637a&amp;id=1251</d:WebEditorUrl>\r\n
+        \     </m:properties>\r\n    </content>\r\n  </entry>\r\n  <entry m:etag=\"W/&quot;datetime'2013-03-05T17%3A26%3A20.447%2B00%3A00'&quot;\">\r\n
+        \   <id>https://codeplexodata.cloudapp.net/TFS29/WorkItems(1252)</id>\r\n
+        \   <title type=\"text\">A Testing Item.</title>\r\n    <summary type=\"text\">A
+        Test WorkItem from ruby_tfs wrapper</summary>\r\n    <updated>2013-03-05T17:26:20Z</updated>\r\n
+        \   <author>\r\n      <name />\r\n    </author>\r\n    <link rel=\"edit\"
+        title=\"WorkItem\" href=\"WorkItems(1252)\" />\r\n    <link rel=\"http://schemas.microsoft.com/ado/2007/08/dataservices/related/Attachments\"
+        type=\"application/atom+xml;type=feed\" title=\"Attachments\" href=\"WorkItems(1252)/Attachments\"
+        />\r\n    <category term=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.WorkItem\"
+        scheme=\"http://schemas.microsoft.com/ado/2007/08/dataservices/scheme\" />\r\n
+        \   <content type=\"application/xml\">\r\n      <m:properties>\r\n        <d:Id
+        m:type=\"Edm.Int32\">1252</d:Id>\r\n        <d:AreaPath>rubytfs</d:AreaPath>\r\n
+        \       <d:IterationPath>rubytfs</d:IterationPath>\r\n        <d:Revision
+        m:type=\"Edm.Int32\">1</d:Revision>\r\n        <d:Priority></d:Priority>\r\n
+        \       <d:Severity m:null=\"true\" />\r\n        <d:StackRank m:null=\"true\"
+        />\r\n        <d:Project>rubytfs</d:Project>\r\n        <d:AssignedTo>plukevdh_cp</d:AssignedTo>\r\n
+        \       <d:CreatedDate m:type=\"Edm.DateTime\">2013-03-05T17:26:20.447+00:00</d:CreatedDate>\r\n
+        \       <d:CreatedBy>plukevdh_cp</d:CreatedBy>\r\n        <d:ChangedDate m:type=\"Edm.DateTime\">2013-03-05T17:26:20.447+00:00</d:ChangedDate>\r\n
+        \       <d:ChangedBy>plukevdh_cp</d:ChangedBy>\r\n        <d:ResolvedBy m:null=\"true\"
+        />\r\n        <d:Title>A Testing Item.</d:Title>\r\n        <d:State>Proposed</d:State>\r\n
+        \       <d:Type>Work Item</d:Type>\r\n        <d:Reason>New</d:Reason>\r\n
+        \       <d:Description>A Test WorkItem from ruby_tfs wrapper</d:Description>\r\n
+        \       <d:ReproSteps m:null=\"true\" />\r\n        <d:FoundInBuild m:null=\"true\"
+        />\r\n        <d:IntegratedInBuild m:null=\"true\" />\r\n        <d:WebEditorUrl>https://tfs.codeplex.com/tfs/web/wi.aspx?pcguid=6d081351-a130-4f95-a3e6-486afb32637a&amp;id=1252</d:WebEditorUrl>\r\n
+        \     </m:properties>\r\n    </content>\r\n  </entry>\r\n</feed>"
+    http_version: 
+  recorded_at: Wed, 06 Mar 2013 16:49:02 GMT
+- request:
+    method: get
+    uri: https://snd%5Cplukevdh_cp:garbage@codeplexodata.cloudapp.net/TFS29/$metadata
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Length:
+      - '22255'
+      Content-Type:
+      - application/xml;charset=utf-8
+      Expires:
+      - Wed, 06 Mar 2013 16:49:18 GMT
+      Vary:
+      - ! '*'
+      Server:
+      - Microsoft-IIS/7.0
+      Dataserviceversion:
+      - 1.0;
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Wed, 06 Mar 2013 16:49:01 GMT
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>\r\n<edmx:Edmx
+        Version=\"1.0\" xmlns:edmx=\"http://schemas.microsoft.com/ado/2007/06/edmx\">\r\n
+        \ <edmx:DataServices xmlns:m=\"http://schemas.microsoft.com/ado/2007/08/dataservices/metadata\"
+        m:DataServiceVersion=\"1.0\">\r\n    <Schema Namespace=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities\"
+        xmlns:d=\"http://schemas.microsoft.com/ado/2007/08/dataservices\" xmlns:m=\"http://schemas.microsoft.com/ado/2007/08/dataservices/metadata\"
+        xmlns=\"http://schemas.microsoft.com/ado/2007/05/edm\">\r\n      <EntityType
+        Name=\"Build\">\r\n        <Key>\r\n          <PropertyRef Name=\"Definition\"
+        />\r\n          <PropertyRef Name=\"Number\" />\r\n          <PropertyRef
+        Name=\"Project\" />\r\n        </Key>\r\n        <Property Name=\"Project\"
+        Type=\"Edm.String\" Nullable=\"false\" />\r\n        <Property Name=\"Definition\"
+        Type=\"Edm.String\" Nullable=\"false\" />\r\n        <Property Name=\"Number\"
+        Type=\"Edm.String\" Nullable=\"false\" m:FC_TargetPath=\"SyndicationTitle\"
+        m:FC_ContentKind=\"text\" m:FC_KeepInContent=\"true\" />\r\n        <Property
+        Name=\"Reason\" Type=\"Edm.String\" Nullable=\"true\" />\r\n        <Property
+        Name=\"Quality\" Type=\"Edm.String\" Nullable=\"true\" />\r\n        <Property
+        Name=\"Status\" Type=\"Edm.String\" Nullable=\"true\" m:FC_TargetPath=\"SyndicationSummary\"
+        m:FC_ContentKind=\"text\" m:FC_KeepInContent=\"true\" />\r\n        <Property
+        Name=\"RequestedBy\" Type=\"Edm.String\" Nullable=\"true\" />\r\n        <Property
+        Name=\"RequestedFor\" Type=\"Edm.String\" Nullable=\"true\" />\r\n        <Property
+        Name=\"LastChangedBy\" Type=\"Edm.String\" Nullable=\"true\" />\r\n        <Property
+        Name=\"StartTime\" Type=\"Edm.DateTime\" Nullable=\"false\" />\r\n        <Property
+        Name=\"FinishTime\" Type=\"Edm.DateTime\" Nullable=\"false\" />\r\n        <Property
+        Name=\"LastChangedOn\" Type=\"Edm.DateTime\" Nullable=\"false\" ConcurrencyMode=\"Fixed\"
+        m:FC_TargetPath=\"SyndicationUpdated\" m:FC_ContentKind=\"text\" m:FC_KeepInContent=\"true\"
+        />\r\n        <Property Name=\"BuildFinished\" Type=\"Edm.Boolean\" Nullable=\"false\"
+        />\r\n        <Property Name=\"DropLocation\" Type=\"Edm.String\" Nullable=\"true\"
+        />\r\n        <Property Name=\"Errors\" Type=\"Edm.String\" Nullable=\"true\"
+        />\r\n        <Property Name=\"Warnings\" Type=\"Edm.String\" Nullable=\"true\"
+        />\r\n        <NavigationProperty Name=\"WorkItems\" Relationship=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Build_WorkItems\"
+        FromRole=\"Build\" ToRole=\"WorkItems\" />\r\n        <NavigationProperty
+        Name=\"Changesets\" Relationship=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Build_Changesets\"
+        FromRole=\"Build\" ToRole=\"Changesets\" />\r\n      </EntityType>\r\n      <EntityType
+        Name=\"BuildDefinition\">\r\n        <Key>\r\n          <PropertyRef Name=\"Definition\"
+        />\r\n          <PropertyRef Name=\"Project\" />\r\n        </Key>\r\n        <Property
+        Name=\"Project\" Type=\"Edm.String\" Nullable=\"false\" />\r\n        <Property
+        Name=\"Definition\" Type=\"Edm.String\" Nullable=\"false\" m:FC_TargetPath=\"SyndicationTitle\"
+        m:FC_ContentKind=\"text\" m:FC_KeepInContent=\"true\" />\r\n      </EntityType>\r\n
+        \     <EntityType Name=\"Changeset\">\r\n        <Key>\r\n          <PropertyRef
+        Name=\"Id\" />\r\n        </Key>\r\n        <Property Name=\"Id\" Type=\"Edm.Int32\"
+        Nullable=\"false\" />\r\n        <Property Name=\"ArtifactUri\" Type=\"Edm.String\"
+        Nullable=\"true\" m:FC_TargetPath=\"SyndicationTitle\" m:FC_ContentKind=\"text\"
+        m:FC_KeepInContent=\"true\" />\r\n        <Property Name=\"Comment\" Type=\"Edm.String\"
+        Nullable=\"true\" m:FC_TargetPath=\"SyndicationSummary\" m:FC_ContentKind=\"text\"
+        m:FC_KeepInContent=\"true\" />\r\n        <Property Name=\"Committer\" Type=\"Edm.String\"
+        Nullable=\"true\" />\r\n        <Property Name=\"CreationDate\" Type=\"Edm.DateTime\"
+        Nullable=\"false\" ConcurrencyMode=\"Fixed\" m:FC_TargetPath=\"SyndicationUpdated\"
+        m:FC_ContentKind=\"text\" m:FC_KeepInContent=\"true\" />\r\n        <Property
+        Name=\"Owner\" Type=\"Edm.String\" Nullable=\"true\" />\r\n        <Property
+        Name=\"Branch\" Type=\"Edm.String\" Nullable=\"true\" />\r\n        <Property
+        Name=\"WebEditorUrl\" Type=\"Edm.String\" Nullable=\"true\" />\r\n        <NavigationProperty
+        Name=\"Changes\" Relationship=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Changeset_Changes\"
+        FromRole=\"Changeset\" ToRole=\"Changes\" />\r\n        <NavigationProperty
+        Name=\"WorkItems\" Relationship=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Changeset_WorkItems\"
+        FromRole=\"Changeset\" ToRole=\"WorkItems\" />\r\n      </EntityType>\r\n
+        \     <EntityType Name=\"Project\">\r\n        <Key>\r\n          <PropertyRef
+        Name=\"Name\" />\r\n        </Key>\r\n        <Property Name=\"Name\" Type=\"Edm.String\"
+        Nullable=\"false\" m:FC_TargetPath=\"SyndicationTitle\" m:FC_ContentKind=\"text\"
+        m:FC_KeepInContent=\"true\" />\r\n        <Property Name=\"Collection\" Type=\"Edm.String\"
+        Nullable=\"true\" />\r\n        <NavigationProperty Name=\"Changesets\" Relationship=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Project_Changesets\"
+        FromRole=\"Project\" ToRole=\"Changesets\" />\r\n        <NavigationProperty
+        Name=\"Builds\" Relationship=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Project_Builds\"
+        FromRole=\"Project\" ToRole=\"Builds\" />\r\n        <NavigationProperty Name=\"BuildDefinitions\"
+        Relationship=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Project_BuildDefinitions\"
+        FromRole=\"Project\" ToRole=\"BuildDefinitions\" />\r\n        <NavigationProperty
+        Name=\"WorkItems\" Relationship=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Project_WorkItems\"
+        FromRole=\"Project\" ToRole=\"WorkItems\" />\r\n        <NavigationProperty
+        Name=\"Queries\" Relationship=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Project_Queries\"
+        FromRole=\"Project\" ToRole=\"Queries\" />\r\n        <NavigationProperty
+        Name=\"Branches\" Relationship=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Project_Branches\"
+        FromRole=\"Project\" ToRole=\"Branches\" />\r\n        <NavigationProperty
+        Name=\"AreaPaths\" Relationship=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Project_AreaPaths\"
+        FromRole=\"Project\" ToRole=\"AreaPaths\" />\r\n      </EntityType>\r\n      <EntityType
+        Name=\"WorkItem\">\r\n        <Key>\r\n          <PropertyRef Name=\"Id\"
+        />\r\n        </Key>\r\n        <Property Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"false\"
+        />\r\n        <Property Name=\"AreaPath\" Type=\"Edm.String\" Nullable=\"true\"
+        />\r\n        <Property Name=\"IterationPath\" Type=\"Edm.String\" Nullable=\"true\"
+        />\r\n        <Property Name=\"Revision\" Type=\"Edm.Int32\" Nullable=\"false\"
+        />\r\n        <Property Name=\"Priority\" Type=\"Edm.String\" Nullable=\"true\"
+        />\r\n        <Property Name=\"Severity\" Type=\"Edm.String\" Nullable=\"true\"
+        />\r\n        <Property Name=\"StackRank\" Type=\"Edm.String\" Nullable=\"true\"
+        />\r\n        <Property Name=\"Project\" Type=\"Edm.String\" Nullable=\"true\"
+        />\r\n        <Property Name=\"AssignedTo\" Type=\"Edm.String\" Nullable=\"true\"
+        />\r\n        <Property Name=\"CreatedDate\" Type=\"Edm.DateTime\" Nullable=\"false\"
+        />\r\n        <Property Name=\"CreatedBy\" Type=\"Edm.String\" Nullable=\"true\"
+        />\r\n        <Property Name=\"ChangedDate\" Type=\"Edm.DateTime\" Nullable=\"false\"
+        ConcurrencyMode=\"Fixed\" m:FC_TargetPath=\"SyndicationUpdated\" m:FC_ContentKind=\"text\"
+        m:FC_KeepInContent=\"true\" />\r\n        <Property Name=\"ChangedBy\" Type=\"Edm.String\"
+        Nullable=\"true\" />\r\n        <Property Name=\"ResolvedBy\" Type=\"Edm.String\"
+        Nullable=\"true\" />\r\n        <Property Name=\"Title\" Type=\"Edm.String\"
+        Nullable=\"true\" m:FC_TargetPath=\"SyndicationTitle\" m:FC_ContentKind=\"text\"
+        m:FC_KeepInContent=\"true\" />\r\n        <Property Name=\"State\" Type=\"Edm.String\"
+        Nullable=\"true\" />\r\n        <Property Name=\"Type\" Type=\"Edm.String\"
+        Nullable=\"true\" />\r\n        <Property Name=\"Reason\" Type=\"Edm.String\"
+        Nullable=\"true\" />\r\n        <Property Name=\"Description\" Type=\"Edm.String\"
+        Nullable=\"true\" m:FC_TargetPath=\"SyndicationSummary\" m:FC_ContentKind=\"text\"
+        m:FC_KeepInContent=\"true\" />\r\n        <Property Name=\"ReproSteps\" Type=\"Edm.String\"
+        Nullable=\"true\" />\r\n        <Property Name=\"FoundInBuild\" Type=\"Edm.String\"
+        Nullable=\"true\" />\r\n        <Property Name=\"IntegratedInBuild\" Type=\"Edm.String\"
+        Nullable=\"true\" />\r\n        <Property Name=\"WebEditorUrl\" Type=\"Edm.String\"
+        Nullable=\"true\" />\r\n        <NavigationProperty Name=\"Attachments\" Relationship=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.WorkItem_Attachments\"
+        FromRole=\"WorkItem\" ToRole=\"Attachments\" />\r\n      </EntityType>\r\n
+        \     <EntityType Name=\"Attachment\" m:HasStream=\"true\">\r\n        <Key>\r\n
+        \         <PropertyRef Name=\"Id\" />\r\n        </Key>\r\n        <Property
+        Name=\"Id\" Type=\"Edm.String\" Nullable=\"false\" />\r\n        <Property
+        Name=\"WorkItemId\" Type=\"Edm.Int32\" Nullable=\"false\" />\r\n        <Property
+        Name=\"Index\" Type=\"Edm.Int32\" Nullable=\"false\" />\r\n        <Property
+        Name=\"AttachedTime\" Type=\"Edm.DateTime\" Nullable=\"false\" ConcurrencyMode=\"Fixed\"
+        m:FC_TargetPath=\"SyndicationUpdated\" m:FC_ContentKind=\"text\" m:FC_KeepInContent=\"true\"
+        />\r\n        <Property Name=\"CreationTime\" Type=\"Edm.DateTime\" Nullable=\"false\"
+        />\r\n        <Property Name=\"LastWriteTime\" Type=\"Edm.DateTime\" Nullable=\"false\"
+        />\r\n        <Property Name=\"Name\" Type=\"Edm.String\" Nullable=\"true\"
+        m:FC_TargetPath=\"SyndicationTitle\" m:FC_ContentKind=\"text\" m:FC_KeepInContent=\"true\"
+        />\r\n        <Property Name=\"Extension\" Type=\"Edm.String\" Nullable=\"true\"
+        />\r\n        <Property Name=\"Comment\" Type=\"Edm.String\" Nullable=\"true\"
+        m:FC_TargetPath=\"SyndicationSummary\" m:FC_ContentKind=\"text\" m:FC_KeepInContent=\"true\"
+        />\r\n        <Property Name=\"Length\" Type=\"Edm.Int64\" Nullable=\"false\"
+        />\r\n        <Property Name=\"Uri\" Type=\"Edm.String\" Nullable=\"true\"
+        />\r\n      </EntityType>\r\n      <EntityType Name=\"Change\">\r\n        <Key>\r\n
+        \         <PropertyRef Name=\"Changeset\" />\r\n          <PropertyRef Name=\"Path\"
+        />\r\n        </Key>\r\n        <Property Name=\"Collection\" Type=\"Edm.String\"
+        Nullable=\"true\" />\r\n        <Property Name=\"Changeset\" Type=\"Edm.Int32\"
+        Nullable=\"false\" />\r\n        <Property Name=\"ChangeType\" Type=\"Edm.String\"
+        Nullable=\"true\" />\r\n        <Property Name=\"Path\" Type=\"Edm.String\"
+        Nullable=\"false\" m:FC_TargetPath=\"SyndicationTitle\" m:FC_ContentKind=\"text\"
+        m:FC_KeepInContent=\"true\" />\r\n        <Property Name=\"Type\" Type=\"Edm.String\"
+        Nullable=\"true\" />\r\n      </EntityType>\r\n      <EntityType Name=\"Query\">\r\n
+        \       <Key>\r\n          <PropertyRef Name=\"Id\" />\r\n        </Key>\r\n
+        \       <Property Name=\"Id\" Type=\"Edm.String\" Nullable=\"false\" />\r\n
+        \       <Property Name=\"Name\" Type=\"Edm.String\" Nullable=\"true\" />\r\n
+        \       <Property Name=\"Description\" Type=\"Edm.String\" Nullable=\"true\"
+        m:FC_TargetPath=\"SyndicationSummary\" m:FC_ContentKind=\"text\" m:FC_KeepInContent=\"true\"
+        />\r\n        <Property Name=\"QueryText\" Type=\"Edm.String\" Nullable=\"true\"
+        />\r\n        <Property Name=\"Path\" Type=\"Edm.String\" Nullable=\"true\"
+        m:FC_TargetPath=\"SyndicationTitle\" m:FC_ContentKind=\"text\" m:FC_KeepInContent=\"true\"
+        />\r\n        <NavigationProperty Name=\"WorkItems\" Relationship=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Query_WorkItems\"
+        FromRole=\"Query\" ToRole=\"WorkItems\" />\r\n        <Property Name=\"Project\"
+        Type=\"Edm.String\" Nullable=\"true\" />\r\n        <Property Name=\"QueryType\"
+        Type=\"Edm.String\" Nullable=\"true\" />\r\n      </EntityType>\r\n      <EntityType
+        Name=\"Branch\">\r\n        <Key>\r\n          <PropertyRef Name=\"Path\"
+        />\r\n        </Key>\r\n        <Property Name=\"Path\" Type=\"Edm.String\"
+        Nullable=\"false\" m:FC_TargetPath=\"SyndicationTitle\" m:FC_ContentKind=\"text\"
+        m:FC_KeepInContent=\"true\" />\r\n        <Property Name=\"Description\" Type=\"Edm.String\"
+        Nullable=\"true\" m:FC_TargetPath=\"SyndicationSummary\" m:FC_ContentKind=\"text\"
+        m:FC_KeepInContent=\"true\" />\r\n        <Property Name=\"DateCreated\" Type=\"Edm.DateTime\"
+        Nullable=\"false\" ConcurrencyMode=\"Fixed\" m:FC_TargetPath=\"SyndicationUpdated\"
+        m:FC_ContentKind=\"text\" m:FC_KeepInContent=\"true\" />\r\n        <NavigationProperty
+        Name=\"Changesets\" Relationship=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Branch_Changesets\"
+        FromRole=\"Branch\" ToRole=\"Changesets\" />\r\n      </EntityType>\r\n      <EntityType
+        Name=\"AreaPath\">\r\n        <Key>\r\n          <PropertyRef Name=\"Path\"
+        />\r\n        </Key>\r\n        <Property Name=\"Path\" Type=\"Edm.String\"
+        Nullable=\"false\" m:FC_TargetPath=\"SyndicationTitle\" m:FC_ContentKind=\"text\"
+        m:FC_KeepInContent=\"true\" />\r\n        <Property Name=\"Name\" Type=\"Edm.String\"
+        Nullable=\"true\" ConcurrencyMode=\"Fixed\" m:FC_TargetPath=\"SyndicationSummary\"
+        m:FC_ContentKind=\"text\" m:FC_KeepInContent=\"true\" />\r\n        <NavigationProperty
+        Name=\"SubAreas\" Relationship=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.AreaPath_SubAreas\"
+        FromRole=\"AreaPath\" ToRole=\"SubAreas\" />\r\n      </EntityType>\r\n      <Association
+        Name=\"Build_WorkItems\">\r\n        <End Role=\"Build\" Type=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Build\"
+        Multiplicity=\"*\" />\r\n        <End Role=\"WorkItems\" Type=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.WorkItem\"
+        Multiplicity=\"*\" />\r\n      </Association>\r\n      <Association Name=\"Build_Changesets\">\r\n
+        \       <End Role=\"Build\" Type=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Build\"
+        Multiplicity=\"*\" />\r\n        <End Role=\"Changesets\" Type=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Changeset\"
+        Multiplicity=\"*\" />\r\n      </Association>\r\n      <Association Name=\"Changeset_Changes\">\r\n
+        \       <End Role=\"Changeset\" Type=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Changeset\"
+        Multiplicity=\"*\" />\r\n        <End Role=\"Changes\" Type=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Change\"
+        Multiplicity=\"*\" />\r\n      </Association>\r\n      <Association Name=\"Changeset_WorkItems\">\r\n
+        \       <End Role=\"Changeset\" Type=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Changeset\"
+        Multiplicity=\"*\" />\r\n        <End Role=\"WorkItems\" Type=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.WorkItem\"
+        Multiplicity=\"*\" />\r\n      </Association>\r\n      <Association Name=\"Project_Changesets\">\r\n
+        \       <End Role=\"Project\" Type=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Project\"
+        Multiplicity=\"*\" />\r\n        <End Role=\"Changesets\" Type=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Changeset\"
+        Multiplicity=\"*\" />\r\n      </Association>\r\n      <Association Name=\"Project_Builds\">\r\n
+        \       <End Role=\"Project\" Type=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Project\"
+        Multiplicity=\"*\" />\r\n        <End Role=\"Builds\" Type=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Build\"
+        Multiplicity=\"*\" />\r\n      </Association>\r\n      <Association Name=\"Project_BuildDefinitions\">\r\n
+        \       <End Role=\"Project\" Type=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Project\"
+        Multiplicity=\"*\" />\r\n        <End Role=\"BuildDefinitions\" Type=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.BuildDefinition\"
+        Multiplicity=\"*\" />\r\n      </Association>\r\n      <Association Name=\"Project_WorkItems\">\r\n
+        \       <End Role=\"Project\" Type=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Project\"
+        Multiplicity=\"*\" />\r\n        <End Role=\"WorkItems\" Type=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.WorkItem\"
+        Multiplicity=\"*\" />\r\n      </Association>\r\n      <Association Name=\"Project_Queries\">\r\n
+        \       <End Role=\"Project\" Type=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Project\"
+        Multiplicity=\"*\" />\r\n        <End Role=\"Queries\" Type=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Query\"
+        Multiplicity=\"*\" />\r\n      </Association>\r\n      <Association Name=\"Project_Branches\">\r\n
+        \       <End Role=\"Project\" Type=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Project\"
+        Multiplicity=\"*\" />\r\n        <End Role=\"Branches\" Type=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Branch\"
+        Multiplicity=\"*\" />\r\n      </Association>\r\n      <Association Name=\"Project_AreaPaths\">\r\n
+        \       <End Role=\"Project\" Type=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Project\"
+        Multiplicity=\"*\" />\r\n        <End Role=\"AreaPaths\" Type=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.AreaPath\"
+        Multiplicity=\"*\" />\r\n      </Association>\r\n      <Association Name=\"WorkItem_Attachments\">\r\n
+        \       <End Role=\"WorkItem\" Type=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.WorkItem\"
+        Multiplicity=\"*\" />\r\n        <End Role=\"Attachments\" Type=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Attachment\"
+        Multiplicity=\"*\" />\r\n      </Association>\r\n      <Association Name=\"Query_WorkItems\">\r\n
+        \       <End Role=\"Query\" Type=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Query\"
+        Multiplicity=\"*\" />\r\n        <End Role=\"WorkItems\" Type=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.WorkItem\"
+        Multiplicity=\"*\" />\r\n      </Association>\r\n      <Association Name=\"Branch_Changesets\">\r\n
+        \       <End Role=\"Branch\" Type=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Branch\"
+        Multiplicity=\"*\" />\r\n        <End Role=\"Changesets\" Type=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Changeset\"
+        Multiplicity=\"*\" />\r\n      </Association>\r\n      <Association Name=\"AreaPath_SubAreas\">\r\n
+        \       <End Role=\"AreaPath\" Type=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.AreaPath\"
+        Multiplicity=\"*\" />\r\n        <End Role=\"SubAreas\" Type=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.AreaPath\"
+        Multiplicity=\"*\" />\r\n      </Association>\r\n    </Schema>\r\n    <Schema
+        Namespace=\"Microsoft.Samples.DPE.ODataTFS.Model\" xmlns:d=\"http://schemas.microsoft.com/ado/2007/08/dataservices\"
+        xmlns:m=\"http://schemas.microsoft.com/ado/2007/08/dataservices/metadata\"
+        xmlns=\"http://schemas.microsoft.com/ado/2007/05/edm\">\r\n      <EntityContainer
+        Name=\"TFSData\" m:IsDefaultEntityContainer=\"true\">\r\n        <EntitySet
+        Name=\"Builds\" EntityType=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Build\"
+        />\r\n        <EntitySet Name=\"BuildDefinitions\" EntityType=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.BuildDefinition\"
+        />\r\n        <EntitySet Name=\"Changesets\" EntityType=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Changeset\"
+        />\r\n        <EntitySet Name=\"Projects\" EntityType=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Project\"
+        />\r\n        <EntitySet Name=\"WorkItems\" EntityType=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.WorkItem\"
+        />\r\n        <EntitySet Name=\"Attachments\" EntityType=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Attachment\"
+        />\r\n        <EntitySet Name=\"Changes\" EntityType=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Change\"
+        />\r\n        <EntitySet Name=\"Queries\" EntityType=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Query\"
+        />\r\n        <EntitySet Name=\"Branches\" EntityType=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Branch\"
+        />\r\n        <EntitySet Name=\"AreaPaths\" EntityType=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.AreaPath\"
+        />\r\n        <AssociationSet Name=\"Build_WorkItems\" Association=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Build_WorkItems\">\r\n
+        \         <End Role=\"Build\" EntitySet=\"Builds\" />\r\n          <End Role=\"WorkItems\"
+        EntitySet=\"WorkItems\" />\r\n        </AssociationSet>\r\n        <AssociationSet
+        Name=\"Build_Changesets\" Association=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Build_Changesets\">\r\n
+        \         <End Role=\"Build\" EntitySet=\"Builds\" />\r\n          <End Role=\"Changesets\"
+        EntitySet=\"Changesets\" />\r\n        </AssociationSet>\r\n        <AssociationSet
+        Name=\"Changeset_Changes\" Association=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Changeset_Changes\">\r\n
+        \         <End Role=\"Changeset\" EntitySet=\"Changesets\" />\r\n          <End
+        Role=\"Changes\" EntitySet=\"Changes\" />\r\n        </AssociationSet>\r\n
+        \       <AssociationSet Name=\"Changeset_WorkItems\" Association=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Changeset_WorkItems\">\r\n
+        \         <End Role=\"Changeset\" EntitySet=\"Changesets\" />\r\n          <End
+        Role=\"WorkItems\" EntitySet=\"WorkItems\" />\r\n        </AssociationSet>\r\n
+        \       <AssociationSet Name=\"Project_Changesets\" Association=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Project_Changesets\">\r\n
+        \         <End Role=\"Project\" EntitySet=\"Projects\" />\r\n          <End
+        Role=\"Changesets\" EntitySet=\"Changesets\" />\r\n        </AssociationSet>\r\n
+        \       <AssociationSet Name=\"Project_Builds\" Association=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Project_Builds\">\r\n
+        \         <End Role=\"Project\" EntitySet=\"Projects\" />\r\n          <End
+        Role=\"Builds\" EntitySet=\"Builds\" />\r\n        </AssociationSet>\r\n        <AssociationSet
+        Name=\"Project_BuildDefinitions\" Association=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Project_BuildDefinitions\">\r\n
+        \         <End Role=\"Project\" EntitySet=\"Projects\" />\r\n          <End
+        Role=\"BuildDefinitions\" EntitySet=\"BuildDefinitions\" />\r\n        </AssociationSet>\r\n
+        \       <AssociationSet Name=\"Project_WorkItems\" Association=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Project_WorkItems\">\r\n
+        \         <End Role=\"Project\" EntitySet=\"Projects\" />\r\n          <End
+        Role=\"WorkItems\" EntitySet=\"WorkItems\" />\r\n        </AssociationSet>\r\n
+        \       <AssociationSet Name=\"Project_Queries\" Association=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Project_Queries\">\r\n
+        \         <End Role=\"Project\" EntitySet=\"Projects\" />\r\n          <End
+        Role=\"Queries\" EntitySet=\"Queries\" />\r\n        </AssociationSet>\r\n
+        \       <AssociationSet Name=\"Project_Branches\" Association=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Project_Branches\">\r\n
+        \         <End Role=\"Project\" EntitySet=\"Projects\" />\r\n          <End
+        Role=\"Branches\" EntitySet=\"Branches\" />\r\n        </AssociationSet>\r\n
+        \       <AssociationSet Name=\"Project_AreaPaths\" Association=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Project_AreaPaths\">\r\n
+        \         <End Role=\"Project\" EntitySet=\"Projects\" />\r\n          <End
+        Role=\"AreaPaths\" EntitySet=\"AreaPaths\" />\r\n        </AssociationSet>\r\n
+        \       <AssociationSet Name=\"WorkItem_Attachments\" Association=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.WorkItem_Attachments\">\r\n
+        \         <End Role=\"WorkItem\" EntitySet=\"WorkItems\" />\r\n          <End
+        Role=\"Attachments\" EntitySet=\"Attachments\" />\r\n        </AssociationSet>\r\n
+        \       <AssociationSet Name=\"Query_WorkItems\" Association=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Query_WorkItems\">\r\n
+        \         <End Role=\"Query\" EntitySet=\"Queries\" />\r\n          <End Role=\"WorkItems\"
+        EntitySet=\"WorkItems\" />\r\n        </AssociationSet>\r\n        <AssociationSet
+        Name=\"Branch_Changesets\" Association=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.Branch_Changesets\">\r\n
+        \         <End Role=\"Branch\" EntitySet=\"Branches\" />\r\n          <End
+        Role=\"Changesets\" EntitySet=\"Changesets\" />\r\n        </AssociationSet>\r\n
+        \       <AssociationSet Name=\"AreaPath_SubAreas\" Association=\"Microsoft.Samples.DPE.ODataTFS.Model.Entities.AreaPath_SubAreas\">\r\n
+        \         <End Role=\"AreaPath\" EntitySet=\"AreaPaths\" />\r\n          <End
+        Role=\"SubAreas\" EntitySet=\"AreaPaths\" />\r\n        </AssociationSet>\r\n
+        \       <FunctionImport Name=\"TriggerBuild\" m:HttpMethod=\"POST\" />\r\n
+        \     </EntityContainer>\r\n    </Schema>\r\n  </edmx:DataServices>\r\n</edmx:Edmx>"
+    http_version: 
+  recorded_at: Wed, 06 Mar 2013 16:49:02 GMT
+recorded_with: VCR 2.4.0

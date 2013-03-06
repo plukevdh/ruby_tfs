@@ -71,6 +71,12 @@ module TFS
       @native_query.query
     end
 
+    def method_missing(method_name, *args, &block)
+      return super unless @type.send "#{method_name}?".to_sym
+      @native_query.navigate(odata_class_from_method_name(method_name))
+      self
+    end
+
     private
     def check_type(for_class)
       raise TypeError, "#{for_class.to_s} is not a valid query type." unless VALID_CLASSES.include? for_class
