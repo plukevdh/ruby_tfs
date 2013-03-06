@@ -39,16 +39,39 @@ describe TFS::Client do
         project.size.should == 1
         project.first.Name.should == "rubytfs"
       end
+
+      it "can execute queries" do
+        client.projects("rubytfs")
+        projects = client.run
+
+        projects.size.should == 1
+        projects.first.Name.should == "rubytfs"
+      end
+
     end
 
     context "sub queries" do
-      use_vcr_cassette "project_workitems_queries"
+      use_vcr_cassette "project_changesets"
 
       before do
         client.connect
       end
 
       it "can traverse/filter by sub items (children)" do
+        changesets = client.projects('rubytfs').changesets.run
+        changesets.count.should == 2
+        changesets.first.should be_a Changeset
+      end
+    end
+
+    context "special cases" do
+      use_vcr_cassette "project_workitems"
+
+      before do
+        client.connect
+      end
+
+      it "can traverse special case classes" do
         work_items = client.projects('rubytfs').workitems.run
         work_items.count.should == 19
         work_items.first.should be_a WorkItem

@@ -22,7 +22,11 @@ module TFS
       #     TFS::Builds.find("DevBuild", "My New Project", 'DevBuild.3')
       #
       def find(definition, project, number)
-        TFS.builds("Definition='#{definition}',Project='#{project}',Number='#{number}'").run.first
+        begin
+          TFS.builds("Definition='#{definition}',Project='#{project}',Number='#{number}'").run.first
+        rescue RestClient::BadRequest => e
+          raise Queryable::RecordNotFound, "No record found for '#{definition}', '#{project}', #{number}"
+        end
       end
     end
   end

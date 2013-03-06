@@ -23,6 +23,10 @@ describe TFS::Builds do
       results.count.should == 0
     end
 
+    it "can get a specific build" do
+      expect { TFS::Builds.find('rubytfs_demo', 'rubytfs', 1) }.to raise_error(TFS::Queryable::RecordNotFound)
+    end
+
     it "can query in the raw" do
       results = TFS::Builds.odata_query("Status eq 'Succeeded'").limit(5).run
       results.each do |build|

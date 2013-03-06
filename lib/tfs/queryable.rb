@@ -1,5 +1,7 @@
 module TFS
   class Queryable
+    RecordNotFound = Class.new(StandardError)
+
     class << self
       include TFS::ClassHelpers
       # Always limit to the default limit of 50 so as not to overwhelm the service
