@@ -9,10 +9,12 @@ describe TFS::Client do
       username: "test", password: "123", provider: provider)
 
     provider.should_receive(new: true).with("http://fake.tfs.net/tfs:8080",
-      {:username=>"test", :password=>"123",
-       :headers=>{:accept=>"application/json", :user_agent=>"TFS Ruby Gem"},
-       :request=>{:open_timeout=>5, :timeout=>10},
-       :verify_ssl=>false}).once
+      {:rest_options=>{
+        :headers=>{:user_agent=>"TFS Ruby Gem"},
+        :request=>{:open_timeout=>5, :timeout=>10}},
+      :verify_ssl=>false,
+      :username=>"test", :password=>"123",
+      :namespace=>nil}).once
 
     client.connect
   end
@@ -20,6 +22,27 @@ describe TFS::Client do
   context "with odata" do
     let(:client) { TFS::Client.new(endpoint: "https://codeplexodata.cloudapp.net/TFS29",
       username: 'snd\plukevdh_cp', password: 'garbage') }
+
+    context "namespacing" do
+      use_vcr_cassette "changeset_queries"
+
+      it "should namespace if namespace provided" do
+        client = TFS::Client.new(endpoint: "https://codeplexodata.cloudapp.net/TFS29",
+        username: 'snd\plukevdh_cp', password: 'garbage', namespace: "MySpace")
+
+        client.connect
+
+        project = client.projects("rubytfs").run
+        project.first.class.name.should == "MySpace::Project"
+      end
+
+      it "shouldn't namespace if no namespace given" do
+        client.connect
+
+        project = client.projects("rubytfs").run
+        project.first.class.name.should == "Project"
+      end
+    end
 
     context "individual queries" do
       use_vcr_cassette "changeset_queries"

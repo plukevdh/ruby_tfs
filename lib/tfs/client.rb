@@ -9,11 +9,6 @@ module TFS
     include TFS::Configuration
     extend TFS::ClassHelpers
 
-    # Options specific to the provider (odata in this case)
-    PROVIDER_OPTIONS = [:username, :password, :verify_ssl]
-
-    attr_reader :connection, :endpoint
-
     # Creates an instance of the client
     def initialize(options={})
       TFS::Configuration.keys.each do |key|
@@ -23,7 +18,7 @@ module TFS
 
     # Creates the connection to the data provider source
     def connect
-      @connection ||= @provider.new endpoint, opts_for_connection
+      @connection ||= @provider.new endpoint, client_options
     end
 
     TFS::QueryEngine::VALID_CLASSES.each do |klass|
@@ -39,15 +34,6 @@ module TFS
     def method_missing(method_name, *args, &block)
       return super unless @connection.respond_to? method_name
       @connection.send(method_name, *args, &block)
-    end
-
-    private
-
-    def opts_for_connection
-      {
-        username: @username,
-        password: @password
-      }.merge connection_options
     end
   end
 end

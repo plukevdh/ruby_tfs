@@ -5,21 +5,22 @@ module TFS
     extend Forwardable
 
     attr_writer :username, :password
-    attr_accessor :endpoint, :connection_options, :provider
+    attr_accessor :endpoint, :connection_options, :provider, :namespace
 
     def_delegator :options, :hash
 
-    CONNECTION_OPTIONS = {
-      :headers => {
-        :accept => 'application/json',
-        :user_agent => "TFS Ruby Gem",
+    CONNECTION_DEFAULTS = {
+      rest_options: {
+        headers: {
+          user_agent: "TFS Ruby Gem"
+        },
+        request: {
+          open_timeout: 5,
+          timeout: 10,
+        },
       },
-      :request => {
-        :open_timeout => 5,
-        :timeout => 10,
-      },
-      :verify_ssl => false
-    } unless defined? TFS::Configuration::CONNECTION_OPTIONS
+      verify_ssl: false
+    } unless defined? TFS::Configuration::CONNECTION_DEFAULTS
 
     class << self
       def keys
@@ -28,12 +29,13 @@ module TFS
           :password,
           :endpoint,
           :connection_options,
-          :provider
+          :provider,
+          :namespace
         ]
       end
 
       def connection_options
-        CONNECTION_OPTIONS
+        CONNECTION_DEFAULTS
       end
 
       def username
@@ -55,6 +57,9 @@ module TFS
       def options
         Hash[Configuration.keys.map{|key| [key, send(key)]}]
       end
+
+      # No default namespace
+      def namespace ; end
     end
 
     def configure
@@ -73,6 +78,10 @@ module TFS
     private
     def options
       Hash[TFS::Configuration.keys.map{|key| [key, instance_variable_get(:"@#{key}")]}]
+    end
+
+    def client_options
+      connection_options.merge(username: @username, password: @password, namespace: @namespace)
     end
   end
 end
