@@ -12,28 +12,20 @@ This wrapper is mostly a shell around the `ruby_odata` gem to provide a "kinder"
 
 ## API
 
-The [TFS OData api][1] supports the following object types:
+The [TFS OData api][1] supports the following object types (* = not implemented):
 
 - Builds
-- Build Definitions
+- *Build Definitions
 - Changesets
 - Changes
-- Branches
+- *Branches
 - WorkItems
-- Attachments
-- Links
+- *Attachments
+- *Links
 - Projects
-- Queries
+- *Queries
 - AreaPaths
-- IterationPaths
-
-Currently, we support the following (due to my own purposes) with plans to further support the rest as well:
-
-- Builds
-- Changesets
-- WorkItems
-- Projects
-- WorkItems
+- *IterationPaths
 
 ### Querying
 
