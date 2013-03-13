@@ -9,7 +9,7 @@ module TFS
       base_class(name).downcase
     end
 
-    SPECIAL_CASES = { workitems: "WorkItems" }
+    SPECIAL_CASES = { workitems: "WorkItems", areapaths: "AreaPaths" }
 
     def odata_class_from_method_name(method_name)
       return SPECIAL_CASES[method_name] if SPECIAL_CASES.has_key? method_name

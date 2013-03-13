@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/plukevdh/rest-client.git
-  revision: 538df93bddee3a59fbbe4fd0ca76649cf566a8b6
+  revision: 71566ed5af7395057716c9a7bcdc3c471ad842fd
   specs:
     rest-client (1.6.7)
       mime-types (>= 1.16)
@@ -19,7 +19,7 @@ GEM
       i18n (~> 0.6)
       multi_json (~> 1.0)
     addressable (2.3.3)
-    backports (3.0.3)
+    backports (3.1.0)
     coderay (1.0.9)
     columnize (0.3.6)
     crack (0.3.2)
