@@ -1,4 +1,5 @@
 require 'tfs/queryable'
+require 'tfs/branches'
 require 'tfs/builds'
 require 'tfs/changesets'
 require 'tfs/changes'
@@ -16,6 +17,7 @@ module TFS
 
     # Classes we currently support queries on
     VALID_CLASSES = [
+      TFS::Branches,
       TFS::Builds,
       TFS::Changesets,
       TFS::Projects,
