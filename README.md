@@ -18,7 +18,7 @@ The [TFS OData api][1] supports the following object types (* = not implemented)
 - *Build Definitions
 - Changesets
 - Changes
-- *Branches
+- Branches
 - WorkItems
 - *Attachments
 - *Links
