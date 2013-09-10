@@ -19,7 +19,8 @@ module TFS
           timeout: 10,
         },
       },
-      verify_ssl: false
+      verify_ssl: false,
+      eager_partial: false  # currently TFS pagination is broken, remove this once fixed
     } unless defined? TFS::Configuration::CONNECTION_DEFAULTS
 
     class << self
