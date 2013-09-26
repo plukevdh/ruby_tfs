@@ -6,6 +6,7 @@ require 'tfs/changes'
 require 'tfs/projects'
 require 'tfs/work_items'
 require 'tfs/area_paths'
+require 'tfs/changeset_merges'
 
 module TFS
   class QueryEngine
@@ -23,7 +24,8 @@ module TFS
       TFS::Projects,
       TFS::WorkItems,
       TFS::Changes,
-      TFS::AreaPaths
+      TFS::AreaPaths,
+      TFS::ChangesetMerges
     ]
 
     # Default pagination `#all` limit
