@@ -1,5 +1,5 @@
 module TFS
-	class ChangesetMerges
+	class ChangesetMerges < Queryable
 		# dummy class
 	end
 end
