@@ -1,3 +1,5 @@
 test.rb
 coverage/
 docs/
+.bundle
+.gems
